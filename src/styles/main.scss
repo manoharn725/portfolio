@@ -1,13 +1,16 @@
 //abstracts
+@import "./abstracts/colors";
 @import "./abstracts/functions";
 @import "./abstracts/images";
 @import "./abstracts/mixins";
-@import "./abstracts/variables";
+@import "./abstracts/typography";
+
 
 //base
 @import "./base/animations";
 @import "./base/base";
-@import "./base/typography";
 @import "./base/utilities";
 
 //layout
+@import './layout/container';
+@import './layout/grid';

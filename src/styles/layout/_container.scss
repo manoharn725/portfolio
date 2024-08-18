@@ -1,0 +1,25 @@
+//CONTAINER
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  --desktop-width: calc(100% - 12rem);
+  --mobile-width: calc(100% - 2rem);
+  width: clamp(
+    var(--mobile-width),
+    6rem3vw,
+    var(--desktop-width)
+  ); //clamp(min, val, max);
+
+  --desktop-padding-left-right: calc((100% - var(--desktop-width)) / 2);
+  --mobile-padding-left-right: calc((100% - var(--mobile-width)) / 2);
+  padding: 1.8rem
+    clamp(
+      var(--mobile-padding-left-right),
+      5vw,
+      var(--desktop-padding-left-right)
+    );
+    background-color: yellow;
+}
