@@ -1,1 +1,38 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
+
+.container.topbar__container {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  height: 6.3rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.topbar__right {
+  display: flex;
+  align-items: center;
+}
+//correct later
+.topbar__nav {
+  font-size: $font-size-4;
+  width: auto;
+  word-break: keep-all;
+  margin-right: 26px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.topbar__nav--disabled {
+  color: $color-grey-dark-2;
+  pointer-events: none;
+}
+
+.topbar__nav--active {
+  color: $color-secondary;
+}
