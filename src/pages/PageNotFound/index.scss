@@ -1,0 +1,16 @@
+@import "../../styles/main.scss";
+
+.page-not-found-cat__container {
+  width: 322px;
+  height: 322px;
+
+  transform: rotate(90deg);
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
+}
