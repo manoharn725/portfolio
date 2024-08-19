@@ -16,11 +16,22 @@ $color-tertiary-dark: #5643fa;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+
+$color-grey-dark-1: #999;
+$color-grey-dark-2: #333;
 
 $color-white: #fff;
 $color-black: #000;
 
+$color-error: #FF4232;
+$color-link:#1592e6;
 
+//DESIGN SYSTEM
+.shadow-text{
+    text-shadow: 7px 4px 0px #ffd93d;
+}
+
+.typography__heading{
+    border-bottom:2px solid $color-black;
+    margin-bottom: 3rem;
+}
