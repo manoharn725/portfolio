@@ -1,6 +1,6 @@
 // FONT
-$default-font-family: "Eczar", sans-serif; //primary
-$font-family-secondary: "Rubik", sans-serif;
+$default-font-family: "Rubik", sans-serif; //primary
+$font-family-secondary: "Eczar", sans-serif;
 
 //FONT-SIZE
 $default-font-size: 1.6rem; //regular font-size
@@ -28,6 +28,7 @@ $line-heigth-big: 1.28571;
 :is(h1, h2, h3, h4, h5, h6) {
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
+  font-family: $font-family-secondary;
   text-transform: capitalize;
 }
 h1 {
@@ -50,28 +51,35 @@ h6 {
 }
 
 //TEXT
-:is(p, big, small, a) {
-  font-family: $font-family-secondary;
-  line-height: $line-heigth-big;
-}
 p {
   //default font size - no need to mention
   line-height: $line-height-paragraph;
 }
 big {
   font-size: $font-size-3;
+  line-height: $line-heigth-big;
 }
 small {
   font-size: $font-size-2;
+  line-height: $line-heigth-big;
 }
+.link,
 a {
+  color: $color-link;
+}
+cite {
   font-size: $font-size-1;
   line-height: $default-line-height;
 }
-
+b {
+  font-weight: $font-weight-bold;
+}
+.error {
+  color: $color-error;
+  font-weight: $font-weight-medium;
+}
 //BUTTON
 button {
-  font-family: $font-family-secondary;
   font-weight: $font-weight-medium;
   text-transform: capitalize;
 }
