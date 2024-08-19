@@ -6,13 +6,23 @@ const Topbar = () => {
   const location = useLocation();
   const renderRightNav = () => {
     const navigation = [
-      { id: "home", label: "Home", path: "/" },
-      { id: "about", label: "About", path: "/about/" },
+      { id: "home", label: "Home", path: "/", isDisabled: true },
+      { id: "about", label: "About", path: "/about/", isDisabled: true  },
       {
         id: "education",
         label: "Education",
         path: "/education",
         isDisabled: true,
+      },
+      {
+        id: "design-system",
+        label: "Design System",
+        path: "/design-system",
+      },
+      {
+        id: "page-not-found",
+        label: "Page Not Found",
+        path: "/page-not-found",
       },
     ];
 
@@ -42,7 +52,7 @@ const Topbar = () => {
   };
   return (
     <div className="container topbar__container">
-      <button className="topbar__left">Topbar</button>
+      <div className="topbar__left">Manohar N</div>
       {renderRightNav()}
     </div>
   );
