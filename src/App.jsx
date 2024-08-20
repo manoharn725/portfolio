@@ -4,13 +4,15 @@ import About from "./pages/About";
 import Topbar from "./components/Topbar";
 import Footer from "./components/Footer";
 import "./index.scss";
+import PageNotFound from "./pages/PageNotFound";
 const App = () => {
   return (
     <div className="app">
       <Topbar />
       <Routes>
-        <Route path="/" element={<DesignSystem />} />
+        <Route path="/design-system" element={<DesignSystem />} />
         <Route path="/about/" element={<About />} />
+        <Route path="/page-not-found" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </div>
