@@ -1,19 +1,19 @@
 //COLORS
-$default-color: #777;
+$default-color: #212529;
 
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+$color-primary: #ffc107;
+$color-primary-light: #ffe207;
+$color-primary-dark: #ffa007;
 
-$color-secondary: #ff5900;
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+$color-secondary: #ff6f61;
+$color-secondary-light: #ff9b94;
+$color-secondary-dark: #cc564f;
 
-$color-tertiary: #1900ff;
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+$color-tertiary: #17a2b8;
+$color-tertiary-light: #4ed4e5;
+$color-tertiary-dark: #117a8b;
 
-$color-base-1: #f7f7f7;
+$color-base-1: #ffffff;
 $color-base-2: #eee;
 
 
@@ -30,7 +30,7 @@ $border-color: rgba(37, 39, 52, 0.1);
 
 //DESIGN SYSTEM
 .shadow-text{
-    text-shadow: 7px 4px 0px #ffd93d;
+    text-shadow: 7px 4px 0px $color-primary-light;
 }
 
 .typography__heading{
