@@ -1,22 +1,25 @@
 @import "../../styles/main.scss";
 
-.container.topbar__container {
-  background-color: hsla(0,0%,97%,.82);
+.topbar__wrap {
+  background-color: hsla(0, 0%, 97%, 0.82);
   backdrop-filter: blur(5px);
-  border-bottom: 1px solid rgba(107,124,147,.2);
+  border-bottom: 1px solid rgba(107, 124, 147, 0.2);
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 6.3rem;
+}
+.container.topbar__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 6px;
   padding-bottom: 6px;
-  height: 6.3rem;
-  position: sticky;
-  top: 0;
-  left: 0;
+  height: 100%;
 }
-.topbar__left{
-  font-size: $font-size-5;
+.topbar__left {
+  font-size: $font-size-6;
   font-weight: $font-weight-bold;
 }
 .topbar__right {

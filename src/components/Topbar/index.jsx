@@ -7,7 +7,7 @@ const Topbar = () => {
   const renderRightNav = () => {
     const navigation = [
       { id: "home", label: "Home", path: "/", isDisabled: true },
-      { id: "about", label: "About", path: "/about/", isDisabled: true  },
+      { id: "about", label: "About", path: "/about/", isDisabled: true },
       {
         id: "education",
         label: "Education",
@@ -51,9 +51,11 @@ const Topbar = () => {
     );
   };
   return (
-    <div className="container topbar__container">
-      <div className="topbar__left">Manohar N</div>
-      {renderRightNav()}
+    <div className="topbar__wrap">
+      <div className="container topbar__container">
+        <div className="topbar__left">Manohar N</div>
+        {renderRightNav()}
+      </div>
     </div>
   );
 };
