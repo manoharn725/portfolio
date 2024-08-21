@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Topbar from "./components/Topbar";
 import Footer from "./components/Footer";
 import "./index.scss";
+
 import PageNotFound from "./pages/PageNotFound";
 const App = () => {
   return (
