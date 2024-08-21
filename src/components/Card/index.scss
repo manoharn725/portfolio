@@ -1,0 +1,48 @@
+@import "../../styles/main.scss";
+
+//CARDS
+.card {
+  &__container {
+    width: auto;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__image {
+    border: 2px solid $color-black;
+    border-radius: 10px;
+    height: calc(100% - 10rem);
+    background-image: var(--elephant-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__content {
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 3.6rem 1fr;
+    gap: 20px;
+
+    &--icon {
+      width: 3.6rem;
+      height: 3.6rem;
+      border-radius: 50%;
+      background-color: aquamarine;
+      background-image: var(--man-img);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &--title {
+    }
+    &--descripation {
+      overflow: hidden;
+    }
+  }
+}
