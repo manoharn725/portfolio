@@ -1,1 +1,81 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
+//COLORS
+.design-system-colors__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+  .design-system-color__box {
+    border: 1px solid black;
+    padding: 1.6rem;
+    height: 12rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  $colors: $default-color, $color-primary, $color-primary-light,
+    $color-primary-dark, $color-secondary, $color-secondary-light,
+    $color-secondary-dark, $color-tertiary, $color-tertiary-light,
+    $color-tertiary-dark, $color-base-1, $color-base-2, $color-grey-dark-1,
+    $color-grey-dark-2, $color-white, $color-black;
+  
+  @each $color in $colors {
+    $index: index($colors, $color);
+    .design-system-colors__container
+      > .design-system-color__box:nth-child(#{$index}) {
+      background-color: $color;
+      color: $color-black;
+    }
+    @if $index == 8 {
+      .design-system-colors__container
+        > .design-system-color__box:nth-child(#{$index}) {
+        color: $color-white;
+      }
+    }
+    @if $index == 10 {
+      .design-system-colors__container
+        > .design-system-color__box:nth-child(#{$index}) {
+        color: $color-white;
+      }
+    }
+    @if $index == 14 {
+      .design-system-colors__container
+        > .design-system-color__box:nth-child(#{$index}) {
+        color: $color-white;
+      }
+    }
+    @if $index == 16 {
+      .design-system-colors__container
+        > .design-system-color__box:nth-child(#{$index}) {
+        color: $color-white;
+      }
+    }
+  }
+  
+  //TYPOGRAPHY
+  .design-system-typography__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    // gap: 8rem;
+  }
+  .design-system-typography__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  //LOADERS
+  .design-system-loaders__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    justify-items: center;
+  }
+  
+  //BUTTONS
+  .design-system-buttons__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 180px);
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  

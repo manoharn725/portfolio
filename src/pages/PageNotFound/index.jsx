@@ -16,7 +16,7 @@ const PageNotFound = () => {
             <h1>Opps! are you lost!</h1>
             <h2>404</h2>
             <p>Page Not Found</p>
-            <Button title='Go Back Home' onClick={toHome}/>
+            <Button title='Go Back Home' isPrimary onClick={toHome}/>
             
             <div className="page-not-found-cat__container">
                 <Lottie animationData={pageNotFoundAnimation} loop={false} />
