@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import DesignSystem from "./pages/DesignSystem";
 import About from "./pages/About";
 import Topbar from "./components/Topbar";
@@ -11,8 +12,9 @@ const App = () => {
     <div className="app">
       <Topbar />
       <Routes>
-        <Route path="/design-system" element={<DesignSystem />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about/" element={<About />} />
+        <Route path="/design-system" element={<DesignSystem />} />
         <Route path="/page-not-found" element={<PageNotFound />} />
       </Routes>
       <Footer />
