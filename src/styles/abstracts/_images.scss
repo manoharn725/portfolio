@@ -1,17 +1,44 @@
 body{
-    --elephant-img: url(../../asssets/elephant.svg);
-    --man-img: url(../../asssets/man.svg);
+    //CARD TEST IMAGES
+    --elephant-img: url(../../assets/elephant.svg);
+    --man-img: url(../../assets/man.svg);
 
-    --light-theme-avatar-img: url(../../asssets/light-theme-avatar.gif);
-    --dark-theme-avatar-img: url(../../asssets/dark-theme-avatar.gif);
-    --frontend-developer-icons-img: url(../../asssets/frontend-developer-icons.json);
-    --day-mode-developer-img: url(../../asssets/day-mode-developer.json);
-    --night-mode-developer-img: url(../../asssets/night-mode-developer.json);
-    --night-mode-developer-v1-img: url(../../asssets/night-mode-developer-v1.json);
+    //RESUME
+    --my-resume-pdf: url(../../assets/manohar-resume.pdf);
 
-    --gmail-img: url(../../asssets/gmail.svg);
-    --instagram-img: url(../../asssets/instagram.svg);
-    --linkedin-img: url(../../asssets/linkedin.svg);
-    --github-img: url(../../asssets/github.svg);
-    --download-img: url(../../asssets/download.svg);
+    //DEVELOPER IMAGES
+    --light-theme-avatar-img: url(../../assets/light-theme-avatar.gif);
+    --dark-theme-avatar-img: url(../../assets/dark-theme-avatar.gif);
+    --frontend-developer-icons-img: url(../../assets/frontend-developer-icons.json);
+    --day-mode-developer-img: url(../../assets/day-mode-developer.json);
+    --night-mode-developer-img: url(../../assets/night-mode-developer.json);
+    --night-mode-developer-v1-img: url(../../assets/night-mode-developer-v1.json);
+
+    //SOCIAL ICONS
+    --gmail-img: url(../../assets/gmail.svg);
+    --instagram-img: url(../../assets/instagram.svg);
+    --linkedin-img: url(../../assets/linkedin.svg);
+    --github-img: url(../../assets/github.svg);
+    --download-img: url(../../assets/download.svg);
+
+    //COMPANY LOGOS
+    --signant-health-logo-img: url(../../assets/signant-health-logo.jpg);
+    --render-infotech-logo-img: url(../../assets/render-infotech-logo.jpg);
+
+    //TOOLS IS USE ICONS
+    --bootstrap-img: url(../../assets/bootstrap.svg);
+    --css-3-img: url(../../assets/css-3.svg);
+    --git-img: url(../../assets/git.svg);
+    --html-5-img: url(../../assets/html-5.svg);
+    --javascript-img: url(../../assets/javascript.svg);
+    --mongodb-img: url(../../assets/mongodb.svg);
+    --next-js-img: url(../../assets/next-js.svg);
+    --nodejs-img: url(../../assets/nodejs.svg);
+    --photoshop-img: url(../../assets/photoshop.svg);
+    --postman-img: url(../../assets/postman.svg);
+    --react-img: url(../../assets/react.svg);
+    --redux-img: url(../../assets/redux.svg);
+    --scss-img: url(../../assets/scss.svg);
+    --sql-ssms-img: url(../../assets/sql-ssms.svg);
+    --typescript-img: url(../../assets/typescript.svg);
 }
