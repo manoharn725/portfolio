@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Lottie from 'lottie-react';
-import pageNotFoundAnimation from '../../asssets/404cat.json';
+import pageNotFoundAnimation from '../../assets/404cat.json';
 import Button from '../../components/Button';
 import './index.scss';
 
