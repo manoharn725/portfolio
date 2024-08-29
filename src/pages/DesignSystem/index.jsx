@@ -137,11 +137,11 @@ const DesignSystem = () => {
       <section className="design-system-cards">
         <h1 className="typography__heading shadow-text">Cards</h1>
         <div className="grid__cards design-system-cards__container ">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card title="Manohar"  description="Hello Good Morning"/>
+          <Card title="Manohar"  description="Hello Good Morning"/>
+          <Card title="Manohar"  description="Hello Good Morning"/>
+          <Card title="Manohar"  description="Hello Good Morning"/>
+          <Card title="Manohar"  description="Hello Good Morning"/>
         </div>
       </section>
     </div>
