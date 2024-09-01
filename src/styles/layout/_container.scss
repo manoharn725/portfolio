@@ -20,13 +20,14 @@
     ); //clamp(min, val, max);
   max-width: 1320px;
   margin: 0 auto;
+  overflow: hidden;
 
   &__topbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 6px
+    padding: 12px
     clamp(
       var(--mobile-padding-left-right),
       4.5vw,
