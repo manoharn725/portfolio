@@ -107,3 +107,12 @@
 	filter: unset;
 	transform: unset;
 }
+
+//Download
+.button--download{
+	background-image: var(--download-img);
+	background-size: 16px;
+	background-position: right center;
+	padding: 0px 0px 4px 22px;
+	background-repeat: no-repeat;
+}

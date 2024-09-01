@@ -15,6 +15,7 @@ const Button = ({
   isSmall = false,
   isMedium = false,
   isOutline = false,
+  isDownload = false,
 }) => {
   return (
     <button
@@ -36,7 +37,7 @@ const Button = ({
         ${isOutline ? 'button--outline' : ''}
         `}
     >
-      {title}
+      {title}{isDownload ? <span className="button--download"></span> : ''}
       {isLoading && isSpiner ? (
 				<div className="button__loader-container">
 					<BorderLoader
