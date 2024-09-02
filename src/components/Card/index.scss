@@ -3,19 +3,27 @@
 //CARDS
 .card {
   &__container {
-    width: auto;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
     gap: 10px;
+    // border: 1px solid $color-grey-dark-1;
+    border-radius: 10px;
+    // background-color: $color-base-2;
+    box-shadow: 3px 4px 8px 0px $color-grey-dark-1;
+    // box-shadow: 1px 1px 10px 0px $color-grey-dark-1;
   }
 
   &__image {
-    border: 2px solid $color-black;
-    border-radius: 10px;
-    height: calc(100% - 10rem);
-    background-image: var(--elephant-img);
+    // border: 2px solid $color-black;
+    background-color: azure;
+    // border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    // background-image: var(--elephant-img);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -23,26 +31,114 @@
 
   &__content {
     width: 100%;
-    height: 10rem;
-    display: grid;
-    grid-template-columns: 3.6rem 1fr;
-    gap: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &--icon {
       width: 3.6rem;
       height: 3.6rem;
       border-radius: 50%;
-      background-color: aquamarine;
       background-image: var(--man-img);
       background-size: cover;
-      background-position: center center;
+      background-position: left top;
       background-repeat: no-repeat;
+      float: left;
+      margin-right: 1.5rem;
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
     }
 
-    &--title {
+    &--top {
+      & ul {
+        & li {
+          &:not(:first-child){
+            background-image: var(--right-arrow-img);
+          }
+          list-style: none;
+       
+          padding-left: 25px;
+          background-position: left top;
+          background-size: 20px;
+          background-repeat: no-repeat;
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+      }
     }
-    &--descripation {
-      overflow: hidden;
+
+    &--bottom {
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .developers {
+        
+        .developer {
+          padding-top: 5px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1.2rem;
+
+          &__image {
+            width: 3.6rem;
+            height: 3.6rem;
+            border-radius: 50%;
+            background-image: var(--man-img);
+            background-size: cover;
+            background-position: left top;
+            background-repeat: no-repeat;
+
+            transition: all 0.5s ease;
+            cursor: pointer;
+            position: relative;
+
+            &::before {
+              content: attr(data-developerName);
+              display: table;
+              clear: both;
+              padding: 5px 10px;
+              background-color: $color-base-2;
+              box-shadow: 1px 2px 3px $color-black;
+              border-radius: 10px;
+              position: absolute;
+              transform: translate(0px, 0px) rotate(25deg);
+              transition: all 0.5s ease;
+              opacity: 0;
+              color: $color-black;
+            }
+            &::after {
+              content: "";
+              display: table;
+              clear: both;
+              width: 0;
+              height: 0;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 12px solid $color-base-2;
+              position: absolute;
+              transform: translate(0px, 0px) rotate(25deg);
+              transition: all 0.5s ease;
+              opacity: 0;
+            }
+
+            &:hover {
+              transform: scale(1.1);
+
+              &::before {
+                transform: translate(-10px, -45px) rotate(0deg);
+                opacity: 1;
+              }
+              &::after {
+                transform: translate(8px, -17px) rotate(0deg);
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
