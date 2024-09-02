@@ -62,7 +62,7 @@ const DesignSystem = () => {
             <big>Big</big>
             <small>Small</small>
             <b className="error">*Error</b>
-            <a href="#">Link</a>
+            {/* <a href="#">Link</a> */}
           </div>
         </div>
       </section>
