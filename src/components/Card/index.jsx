@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Modal from "../Modal";
-import "./index.scss";
 import Button from "../Button";
+import "./index.scss";
+
 
 const Card = ({
   icon = "man",
