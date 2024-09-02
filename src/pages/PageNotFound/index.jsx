@@ -13,7 +13,7 @@ const PageNotFound = () => {
     }
     return(
         <div className='container container__center'>
-            <h1>Opps! are you lost!</h1>
+            <h2>Opps! are you lost!</h2>
             <h2>404</h2>
             <p>Page Not Found</p>
             <Button title='Go Back Home' isPrimary onClick={toHome}/>
