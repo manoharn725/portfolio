@@ -52,7 +52,7 @@ const Card = ({
               <h6>Developers</h6>
               <div className="developer">
                 {developers.map((developer) => (
-                  <img
+                  <div
                     key={developer.projectDeveloperName}
                     style={{
                       backgroundImage: `var(--${developer.projectDeveloperImage}-img)`,
