@@ -27,12 +27,13 @@ const Modal = ({ isDevelopers = false, developer = {}, onClose }) => {
               className="modal__box--developer-image"
             ></div>
             <div className="modal__box--developer-detailes">
-            <div className="modal__box--developer-name">
-              <span>Name: </span>{developer.projectDeveloperName}
-            </div>
-            <div className="modal__box--developer-designation">
-              <span>Role:</span> {developer.projectDeveloperDesignation}
-            </div>
+              <div className="modal__box--developer-name">
+                <span>Name: </span>
+                {developer.projectDeveloperName}
+              </div>
+              <div className="modal__box--developer-designation">
+                <span>Role:</span> {developer.projectDeveloperDesignation}
+              </div>
             </div>
           </div>
         ) : (
