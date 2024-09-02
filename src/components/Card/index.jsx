@@ -22,7 +22,7 @@ const Card = ({
   const onClose = () => {
     setIsModalOpen(false);
   };
-  console.log(description);
+
   return (
     <div className="card__container">
       <div
