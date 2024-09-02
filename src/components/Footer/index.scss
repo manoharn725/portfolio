@@ -1,1 +1,28 @@
 @import '../../styles/main.scss';
+
+.footer__wrap {
+    // background-color: hsla(0, 0%, 97%, 0.82);
+    background-color: $color-primary;
+    // backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(107, 124, 147, 0.2);
+    height: 6.3rem;
+  }
+
+  .container.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 100%;
+  }
+  .footer__right{
+    display: flex;
+    gap: 1rem;
+    & > i{
+      height: 2.5rem;
+      width: 2.5rem;
+      background-size: contain;
+    }
+  }
