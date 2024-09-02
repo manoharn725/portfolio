@@ -9,7 +9,7 @@ const PageNotFound = () => {
     const navigate = useNavigate();
 
     const toHome = () => {
-        navigate('/design-system');//later change to Home
+        navigate('/');
     }
     return(
         <div className='container container__center'>
