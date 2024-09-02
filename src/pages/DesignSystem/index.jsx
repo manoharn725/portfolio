@@ -140,8 +140,6 @@ const DesignSystem = () => {
           <Card title="Manohar"  description="Hello Good Morning"/>
           <Card title="Manohar"  description="Hello Good Morning"/>
           <Card title="Manohar"  description="Hello Good Morning"/>
-          <Card title="Manohar"  description="Hello Good Morning"/>
-          <Card title="Manohar"  description="Hello Good Morning"/>
         </div>
       </section>
     </div>

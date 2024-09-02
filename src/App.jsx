@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import DesignSystem from "./pages/DesignSystem";
-import About from "./pages/About";
 import Topbar from "./components/Topbar";
 import Footer from "./components/Footer";
 import "./index.scss";
@@ -13,7 +12,6 @@ const App = () => {
       <Topbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about/" element={<About />} />
         <Route path="/design-system" element={<DesignSystem />} />
         <Route path="/page-not-found" element={<PageNotFound />} />
       </Routes>

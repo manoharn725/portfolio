@@ -214,7 +214,8 @@ const Home = () => {
       schoolImage: "swami-vivekananda-pu-college",
       schoolName: "Sree Swamy Vivekananda",
       course: "PCMB",
-      schoolUrl: "https://www.facebook.com/p/Sree-Swamy-Vivekananda-PU-College-Turuvekere-100070875005339/",
+      schoolUrl:
+        "https://www.facebook.com/p/Sree-Swamy-Vivekananda-PU-College-Turuvekere-100070875005339/",
     },
     {
       schoolIcon: "jnv-tumkur-logo",
@@ -268,7 +269,15 @@ const Home = () => {
           </div>
 
           <div className="about__section--descripation">
-          Passionate and responsible UI developer with 3 years of experience delivering high-quality web applications. Proficient in developing responsive and interactive interfaces using React, Redux, TypeScript, JavaScript, HTML, CSS, SCSS, and Bootstrap. Comprehensive experience in the full software development life cycle, including requirements gathering, analysis, implementation, testing, and maintenance. Committed to continuous self-improvement and delivering solutions that exceed expectations. Additionally familiar with SQL and SSMS tools.
+            Passionate and responsible UI developer with 3 years of experience
+            delivering high-quality web applications. Proficient in developing
+            responsive and interactive interfaces using React, Redux,
+            TypeScript, JavaScript, HTML, CSS, SCSS, and Bootstrap.
+            Comprehensive experience in the full software development life
+            cycle, including requirements gathering, analysis, implementation,
+            testing, and maintenance. Committed to continuous self-improvement
+            and delivering solutions that exceed expectations. Additionally
+            familiar with SQL and SSMS tools.
           </div>
         </div>
       </section>
@@ -301,6 +310,7 @@ const Home = () => {
                   </div>
                   {designation.map(
                     ({
+                      index,
                       designationTitle,
                       designationDurationFromDate,
                       designationDurationEndDtae,
@@ -308,7 +318,7 @@ const Home = () => {
                       officeLocation,
                       officeWorkSystem,
                     }) => (
-                      <div className="designation">
+                      <div key={index} className="designation">
                         <div className="designation__title">
                           {designationTitle}
                         </div>
@@ -334,6 +344,7 @@ const Home = () => {
         <div className="project grid__cards">
           {projects.map(
             ({
+              index,
               projectIcon,
               projectImage,
               peojectUrl,
@@ -342,6 +353,7 @@ const Home = () => {
               projectDevelopers,
             }) => (
               <Card
+                key={index}
                 icon={projectIcon}
                 image={projectImage}
                 url={peojectUrl}
@@ -380,8 +392,9 @@ const Home = () => {
         <h2 className="education__section--title">Education</h2>
         <div className="education grid__cards">
           {education.map(
-            ({ schoolIcon, schoolImage, schoolName, course, schoolUrl }) => (
+            ({ index, schoolIcon, schoolImage, schoolName, course, schoolUrl }) => (
               <Card
+              key={index}
                 icon={schoolIcon}
                 image={schoolImage}
                 url={schoolUrl}

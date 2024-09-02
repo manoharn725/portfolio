@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer__left">Manohar</div>
             <div className="footer__right">
                 {socialIcons.map(item => (
-                    <i style={{backgroundImage:`var(--${item}-img)`}}></i>
+                    <i key={item} style={{backgroundImage:`var(--${item}-img)`}}></i>
                 ))}
             </div>
             </div>
