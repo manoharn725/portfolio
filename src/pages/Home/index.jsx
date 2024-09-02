@@ -206,14 +206,14 @@ const Home = () => {
       schoolIcon: "skit-logo",
       schoolImage: "skit-college",
       schoolName: "Sri krishna Institute of Technology",
-      course: "Computer Science Engineering",
+      course: "BE: Computer Science Engineering",
       schoolUrl: "https://www.skit.org.in/index.html",
     },
     {
       schoolIcon: "swami-vivekananda-pu-college",
       schoolImage: "swami-vivekananda-pu-college",
       schoolName: "Sree Swamy Vivekananda",
-      course: "PCMB",
+      course: "PUC: PCMB",
       schoolUrl:
         "https://www.facebook.com/p/Sree-Swamy-Vivekananda-PU-College-Turuvekere-100070875005339/",
     },
