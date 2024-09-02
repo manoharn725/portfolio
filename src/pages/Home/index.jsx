@@ -212,7 +212,7 @@ const Home = () => {
     {
       schoolIcon: "swami-vivekananda-pu-college",
       schoolImage: "swami-vivekananda-pu-college",
-      schoolName: "Sree Swamy Vivekananda PU College",
+      schoolName: "Sree Swamy Vivekananda",
       course: "PCMB",
       schoolUrl: "https://www.facebook.com/p/Sree-Swamy-Vivekananda-PU-College-Turuvekere-100070875005339/",
     },
