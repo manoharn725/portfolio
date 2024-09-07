@@ -4,9 +4,11 @@ import Card from "../../components/Card";
 import resume from "../../assets/manohar-resume.pdf";
 import Lottie from "lottie-react";
 import developer from "../../assets/frontend-developer-icons.json";
+import { useTheme } from "../../context/themeContext";
 import "./index.scss";
 
 const Home = () => {
+  const { isDark } = useTheme();
   const socialIcons = [
     { icon: "github", url: "https://github.com/manoharn725" },
     { icon: "linkedin", url: "https://www.linkedin.com/in/manoharn725/" },
@@ -258,7 +260,13 @@ const Home = () => {
             <Button title="Resume" isPrimary isDownload />
           </a>
         </div>
-        <div className="hero__section--image"></div>
+        <div
+          style={{
+            backgroundImage: `var(--${isDark ? "dark" : "light"}-theme-avatar-img)`
+          }}
+          className="hero__section--image"
+        >
+        </div>
       </section>
 
       <section id="about" className="about__section">
@@ -392,9 +400,16 @@ const Home = () => {
         <h2 className="education__section--title">Education</h2>
         <div className="education grid__cards">
           {education.map(
-            ({ index, schoolIcon, schoolImage, schoolName, course, schoolUrl }) => (
+            ({
+              index,
+              schoolIcon,
+              schoolImage,
+              schoolName,
+              course,
+              schoolUrl,
+            }) => (
               <Card
-              key={index}
+                key={index}
                 icon={schoolIcon}
                 image={schoolImage}
                 url={schoolUrl}

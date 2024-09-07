@@ -25,7 +25,7 @@ $line-height-paragraph: 1.25;
 $line-heigth-big: 1.28571;
 
 //BOLD-H//primary font-family
-:is(h1, h2, h3, h4, h5, h6) {
+h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
   font-family: $font-family-secondary;

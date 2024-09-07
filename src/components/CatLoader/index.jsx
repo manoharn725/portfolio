@@ -3,7 +3,7 @@ import catLoaderAnimation from '../../assets/cat-loader.json';
 // import catLoaderAnimation1 from '../../assets/day-mode-developer.json';
 // import catLoaderAnimation2 from '../../assets/frontend-developer-icons.json';
 // import catLoaderAnimation3 from '../../assets/night-mode-developer-v1.json';
-// import nightModeDeveloper from '../../assets/night-mode-developer.json';
+
 
 import './index.scss';
 
