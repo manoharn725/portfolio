@@ -6,7 +6,7 @@ const ToggleButton = () => {
 
   const handleToggle = () => {
     setIsDark(!isDark);
-    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode", !isDark);
   };
 
   return (
