@@ -26,6 +26,12 @@
       background-color: $color;
       color: $color-black;
     }
+    @if $index == 1 {
+      .design-system-colors__container
+        > .design-system-color__box:nth-child(#{$index}) {
+        color: $color-white;
+      }
+    }
     @if $index == 8 {
       .design-system-colors__container
         > .design-system-color__box:nth-child(#{$index}) {
