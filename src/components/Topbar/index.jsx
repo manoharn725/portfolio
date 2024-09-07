@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import ToggleButton from "../ToggleButton";
 import "./index.scss";
 
 const Topbar = () => {
@@ -8,7 +9,7 @@ const Topbar = () => {
   const location = useLocation();
 
   const toHome = () => {
-    navigate('/');
+    navigate("/");
   };
 
   const handleHamburger = () => {
@@ -40,7 +41,11 @@ const Topbar = () => {
 
     return (
       <>
-        <div className={`topbar__right ${isHamburger ? "topbar__right--open" : ""}`}>
+        <div
+          className={`topbar__right ${
+            isHamburger ? "topbar__right--open" : ""
+          }`}
+        >
           {navigation.map(({ id, label, path, isDisabled }) => (
             <div
               key={id}
@@ -48,11 +53,12 @@ const Topbar = () => {
               className={`topbar__nav ${
                 location.pathname === path ? "topbar__nav--active" : ""
               } ${isDisabled ? "topbar__nav--disabled" : ""}`}
-            onClick={onNavigate}
+              onClick={onNavigate}
             >
               {label}
             </div>
           ))}
+          <ToggleButton />
         </div>
         <div
           className={`topbar__hamburger ${

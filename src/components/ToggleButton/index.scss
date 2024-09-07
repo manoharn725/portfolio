@@ -1,0 +1,50 @@
+@import "../../styles/main.scss";
+
+.toggle-button {
+  width: 60px;
+  height: 34px;
+  display: inline-block;
+  position: relative;
+
+  & > input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &__slider {
+    position: absolute;
+    inset: 0;
+    border-radius: 34px;
+    background-color: $color-secondary;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      display: table;
+      clear: both;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      left: 4px;
+      bottom: 4px;
+      transition: all 0.4s ease;
+    }
+  }
+
+  & > input:checked + .toggle-button__slider {
+    background-color: $color-primary;
+    
+    justify-content: left;
+  }
+  & > input:checked + .toggle-button__slider::before {
+    transform: translateX(26px);
+  }
+}
