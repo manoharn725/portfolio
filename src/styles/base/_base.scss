@@ -43,3 +43,8 @@ html, body{
     height: 100%;
     margin: 0 auto;
 }
+.dark-mode{
+    background-color: $default-color;
+    color: $color-white;
+    transition: all 1s ease;
+}
