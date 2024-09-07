@@ -3,7 +3,6 @@ import Button from "../../components/Button";
 import Card from "../../components/Card";
 import { useNavigate } from "react-router-dom";
 import BorderLoader from "../../components/BorderLoader";
-import ToggleButton from "../../components/ToggleButton";
 import './index.scss';
 
 const DesignSystem = () => {
@@ -73,14 +72,6 @@ const DesignSystem = () => {
           <CatLoader height="220px" />
           <BorderLoader height="220px" />
           <BorderLoader height="220px" isCalmMode />
-        </div>
-      </section>
-      <section className="design-system-toggle-buttons">
-        <h1 className="typography__heading shadow-text">
-          Toggle Buttons
-        </h1>
-        <div className="design-system-buttons__container">
-          <ToggleButton />
         </div>
       </section>
       <section className="design-system-buttons">

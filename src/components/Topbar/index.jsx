@@ -1,12 +1,15 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ToggleButton from "../ToggleButton";
+import { useTheme } from "../../context/themeContext";
 import "./index.scss";
 
 const Topbar = () => {
   const [isHamburger, setIsHamburger] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const { isDark } = useTheme();
 
   const toHome = () => {
     navigate("/");
@@ -20,7 +23,7 @@ const Topbar = () => {
     const path = event.currentTarget.getAttribute("data-path");
     if (path) {
       navigate(path);
-      setIsHamburger(false); 
+      setIsHamburger(false);
     }
   };
 
@@ -43,7 +46,9 @@ const Topbar = () => {
       <>
         <div
           className={`topbar__right ${
-            isHamburger ? "topbar__right--open" : ""
+            isHamburger ? `topbar__right--open topbar__right--open-${
+                  isDark ? "dark" : "light"
+                }` : ""
           }`}
         >
           {navigation.map(({ id, label, path, isDisabled }) => (
@@ -62,20 +67,31 @@ const Topbar = () => {
         </div>
         <div
           className={`topbar__hamburger ${
-            isHamburger ? `topbar__hamburger--open` : ""
+            isHamburger
+              ? "topbar__hamburger--open"
+              : ""
           }`}
           onClick={handleHamburger}
         >
-          <div className="topbar__hamburger--line" />
-          <div className="topbar__hamburger--line" />
-          <div className="topbar__hamburger--line" />
+          <div
+            style={{ backgroundColor: `${isDark ? "white" : "black"}` }}
+            className="topbar__hamburger--line"
+          />
+          <div
+            style={{ backgroundColor: `${isDark ? "white" : "black"}` }}
+            className="topbar__hamburger--line"
+          />
+          <div
+            style={{ backgroundColor: `${isDark ? "white" : "black"}` }}
+            className="topbar__hamburger--line"
+          />
         </div>
       </>
     );
   };
 
   return (
-    <div className="topbar__wrap">
+    <div className={`topbar__wrap topbar__wrap-${isDark ? "dark" : "light"}`}>
       <div className="container container__topbar">
         <div className="topbar__left" onClick={toHome}>
           Manohar N

@@ -6,7 +6,7 @@
   display: inline-block;
   position: relative;
 
-  & > input {
+  & > .theme {
     opacity: 0;
     width: 0;
     height: 0;
@@ -39,12 +39,12 @@
     }
   }
 
-  & > input:checked + .toggle-button__slider {
+  & > .theme-dark + .toggle-button__slider {
     background-color: $color-primary;
     
     justify-content: left;
   }
-  & > input:checked + .toggle-button__slider::before {
+  & > .theme-dark + .toggle-button__slider::before {
     transform: translateX(26px);
   }
 }

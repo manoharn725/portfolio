@@ -5,17 +5,16 @@ const ToggleButton = () => {
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <label className="toggle-button">
-      <input onClick={toggleTheme} type="checkbox" />
+    <div className="toggle-button" onClick={toggleTheme}>
+      <div className={`theme-${isDark ? "dark" : "light"}`} />
       <span
         style={{
           backgroundImage: `var(--${isDark ? "dark-mode" : "light-mode"}-img)`,
           backgroundPosition: `${isDark ? "4px" : "34px"} center`,
         }}
         className="toggle-button__slider"
-      >
-      </span>
-    </label>
+      ></span>
+    </div>
   );
 };
 export default ToggleButton;
