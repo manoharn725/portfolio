@@ -14,7 +14,6 @@ const ToggleButton = () => {
         }}
         className="toggle-button__slider"
       >
-        {/* {isDark ? "dark" : "light"} */}
       </span>
     </label>
   );
