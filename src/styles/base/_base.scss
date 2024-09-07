@@ -1,50 +1,52 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 //ROOT
-#root{
-    height: 100%;
-    width: 100%;
-  }
+#root {
+  height: 100%;
+  width: 100%;
+}
 
 //APP
-.app{
-    height: 100%;
-    width: 100%;
+.app {
+  height: 100%;
+  width: 100%;
 }
 
 html {
-    // defalut browser font-size:16px;
-    // so
-    // To get 10px in percentage 10/16=0.625 = 62.5%
-    //intead of adding font-size as 10px we will add 62.5%
-    //just to verify 0.625*16=10
+  // defalut browser font-size:16px;
+  // so
+  // To get 10px in percentage 10/16=0.625 = 62.5%
+  //intead of adding font-size as 10px we will add 62.5%
+  //just to verify 0.625*16=10
 
-    // This defines what 1rem is
-    font-size: 62.5%;
+  // This defines what 1rem is
+  font-size: 62.5%;
 }
 
-body{
-    box-sizing: border-box;
-    font-family: $default-font-family;
-    font-weight: $default-font-weight;
-    line-height: $default-line-height;
-    color: $default-color;
-    font-size: $default-font-size;
-    background-color: $color-base-1;
+body {
+  box-sizing: border-box;
+  font-family: $default-font-family;
+  font-weight: $default-font-weight;
+  line-height: $default-line-height;
+  color: $default-color;
+  font-size: $default-font-size;
+  background-color: $color-base-1;
+  transition: all 1s ease;
 }
-html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
-.dark-mode{
-    background-color: $color-black;
-    color: $color-white;
-    transition: all 1s ease;
+.dark-mode {
+  background-color: $color-black;
+  color: $color-white;
+  transition: all 1s ease;
 }
