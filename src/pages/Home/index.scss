@@ -146,11 +146,13 @@
       border-top: 1px solid #e3e3e3;
     }
     .company__logo {
-      width: 5.6rem;
-      height: 5.6rem;
-      background-size: 4.8rem;
+      width: 4.8rem;
+      height: 4.8rem;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: top left;
+      background-position: center;
+      border-radius: 8px;
+      margin-right: 1rem;
 
       & > .visually-hidden {
         display: none;
