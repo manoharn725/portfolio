@@ -17,12 +17,12 @@
     inset: 0;
     border-radius: 34px;
     background-color: $color-secondary;
-    transition: all 0.4s ease;
     display: flex;
     align-items: center;
     justify-content: end;
     background-size: 20px 20px;
     background-repeat: no-repeat;
+    transition: all 0.5s ease;
 
     &::before {
       content: "";
@@ -35,7 +35,7 @@
       position: absolute;
       left: 4px;
       bottom: 4px;
-      transition: all 0.4s ease;
+      transition: all 0.5s ease;
     }
   }
 

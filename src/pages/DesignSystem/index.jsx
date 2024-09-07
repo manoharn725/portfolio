@@ -21,7 +21,7 @@ const DesignSystem = () => {
     "Base 2",
     "Gray Dark 1",
     "Gray Dark 2",
-    "White",
+    "Transperant",
     "Black",
   ];
 
@@ -44,7 +44,7 @@ const DesignSystem = () => {
         </div>
       </section>
       <section className="design-system-typography">
-        <h1 className="typography__heading shadow-text">Typography</h1>
+        <h1 className="typography__heading">Typography</h1>
         <div className="design-system-typography__container">
           <div className="design-system-typography__content">
             <h1>Heading 1</h1>

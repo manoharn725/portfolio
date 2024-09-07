@@ -20,7 +20,7 @@ const Topbar = () => {
     const path = event.currentTarget.getAttribute("data-path");
     if (path) {
       navigate(path);
-      setIsHamburger(false); // Close the hamburger menu when a navigation item is clicked
+      setIsHamburger(false); 
     }
   };
 
