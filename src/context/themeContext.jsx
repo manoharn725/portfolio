@@ -7,14 +7,14 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider = ({ children }) => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   const toggleTheme = () => {
-    setIsDark(isDark => !isDark);
-    document.body.classList.toggle("dark-mode", !isDark);
+    setIsDarkTheme(isDarkTheme => !isDarkTheme);
+    document.body.classList.toggle("dark-mode", !isDarkTheme);
   };
   return (
-    <ThemeContext.Provider value={{ isDark, toggleTheme }}>
+    <ThemeContext.Provider value={{ isDarkTheme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   )

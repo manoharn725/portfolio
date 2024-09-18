@@ -9,7 +9,7 @@ const Topbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const { isDark } = useTheme();
+  const { isDarkTheme } = useTheme();
 
   const toHome = () => {
     navigate("/");
@@ -47,7 +47,7 @@ const Topbar = () => {
         <div
           className={`topbar__right ${
             isHamburger ? `topbar__right--open topbar__right--open-${
-                  isDark ? "dark" : "light"
+                  isDarkTheme ? "dark" : "light"
                 }` : ""
           }`}
         >
@@ -74,15 +74,15 @@ const Topbar = () => {
           onClick={handleHamburger}
         >
           <div
-            style={{ backgroundColor: `${isDark ? "white" : "black"}` }}
+            style={{ backgroundColor: `${isDarkTheme ? "white" : "black"}` }}
             className="topbar__hamburger--line"
           />
           <div
-            style={{ backgroundColor: `${isDark ? "white" : "black"}` }}
+            style={{ backgroundColor: `${isDarkTheme ? "white" : "black"}` }}
             className="topbar__hamburger--line"
           />
           <div
-            style={{ backgroundColor: `${isDark ? "white" : "black"}` }}
+            style={{ backgroundColor: `${isDarkTheme ? "white" : "black"}` }}
             className="topbar__hamburger--line"
           />
         </div>
@@ -91,7 +91,7 @@ const Topbar = () => {
   };
 
   return (
-    <div className={`topbar__wrap topbar__wrap-${isDark ? "dark" : "light"}`}>
+    <div className={`topbar__wrap topbar__wrap-${isDarkTheme ? "dark" : "light"}`}>
       <div className="container container__topbar">
         <div className="topbar__left" onClick={toHome}>
           Manohar N

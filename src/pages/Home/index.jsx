@@ -8,7 +8,7 @@ import { useTheme } from "../../context/themeContext";
 import "./index.scss";
 
 const Home = () => {
-  const { isDark } = useTheme();
+  const { isDarkTheme } = useTheme();
   const socialIcons = [
     { icon: "github", url: "https://github.com/manoharn725" },
     { icon: "linkedin", url: "https://www.linkedin.com/in/manoharn725/" },
@@ -262,7 +262,7 @@ const Home = () => {
         </div>
         <div
           style={{
-            backgroundImage: `var(--${isDark ? "dark" : "light"}-theme-avatar-img)`
+            backgroundImage: `var(--${isDarkTheme ? "dark" : "light"}-theme-avatar-img)`
           }}
           className="hero__section--image"
         >
