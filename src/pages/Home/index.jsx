@@ -71,6 +71,19 @@ const Home = () => {
     },
   ];
 
+  const miniProjects = [
+    {
+      projectIcon: "react-js",
+      peojectUrl: "https://manohar-search-movie.netlify.app/",
+      projectImage: "search-movies",
+      projectTitle: "Search English Movies",
+      projectDescription: [
+        "Developed a Search English Movies website integrating Rapid API for real-time movie data",
+        "Implemented efficient search functionality, enabling users to find detailed movie information seamlessly through a responsive and intuitive interface.",
+      ],
+    },
+  ];
+
   const projects = [
     {
       projectIcon: "inflex-logo",
@@ -262,11 +275,12 @@ const Home = () => {
         </div>
         <div
           style={{
-            backgroundImage: `var(--${isDarkTheme ? "dark" : "light"}-theme-avatar-img)`
+            backgroundImage: `var(--${
+              isDarkTheme ? "dark" : "light"
+            }-theme-avatar-img)`,
           }}
           className="hero__section--image"
-        >
-        </div>
+        ></div>
       </section>
 
       <section id="about" className="about__section">
@@ -342,6 +356,31 @@ const Home = () => {
                   )}
                 </div>
               </div>
+            )
+          )}
+        </div>
+      </section>
+
+      <section className="projects__section">
+        <h2 className="projects__section--title">Mini Projects</h2>
+        <div className="project grid__cards">
+          {miniProjects.map(
+            ({
+              index,
+              projectIcon,
+              projectImage,
+              peojectUrl,
+              projectTitle,
+              projectDescription,
+            }) => (
+              <Card
+                key={index}
+                icon={projectIcon}
+                image={projectImage}
+                url={peojectUrl}
+                title={projectTitle}
+                description={projectDescription}
+              />
             )
           )}
         </div>
