@@ -5,8 +5,8 @@ import resume from "../../assets/manohar-resume.pdf";
 import Lottie from "lottie-react";
 import developer from "../../assets/frontend-developer-icons.json";
 import { useTheme } from "../../context/themeContext";
-import "./index.scss";
 import { useSelector } from "react-redux";
+import "./index.scss";
 
 const Home = () => {
   const { isDarkTheme } = useTheme();
