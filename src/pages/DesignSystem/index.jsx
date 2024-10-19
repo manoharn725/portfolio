@@ -1,9 +1,7 @@
 import CatLoader from "../../components/CatLoader";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
-import { useNavigate } from "react-router-dom";
-import BorderLoader from "../../components/BorderLoader";
-import './index.scss';
+import "./index.scss";
 
 const DesignSystem = () => {
   const colors = [
@@ -24,12 +22,6 @@ const DesignSystem = () => {
     "Transperant",
     "Black",
   ];
-
-  const navigate = useNavigate();
-
-  const toPageNotFound = () => {
-    navigate("/page-not-found");
-  };
 
   return (
     <div className="container">
@@ -70,19 +62,12 @@ const DesignSystem = () => {
         <h1 className="typography__heading shadow-text">Loaders</h1>
         <div className="design-system-loaders__container">
           <CatLoader height="220px" />
-          <BorderLoader height="220px" />
-          <BorderLoader height="220px" isCalmMode />
+          
         </div>
       </section>
       <section className="design-system-buttons">
         <h1 className="typography__heading shadow-text"> Buttons</h1>
         <div className="design-system-buttons__container large">
-          <Button
-            title="Primary Button"
-            isPrimary
-            isFillMode={false}
-            onClick={toPageNotFound}
-          />
           <Button isFillMode={false} title="Primary Button" isPrimary />
           <Button
             isFillMode={false}
@@ -90,28 +75,10 @@ const DesignSystem = () => {
             isPrimary
             isDisabled
           />
-          <Button
-            isFillMode={false}
-            title="Primary loading"
-            isPrimary
-            isLoading
-          />
-          <Button
-            isFillMode={false}
-            title="Border loader"
-            isLoading
-            isSpiner
-            isPrimary
-          />
+
           <Button isFillMode={false} title="Secondary Button" />
           <Button isFillMode={false} title="Secondary Disabled" isDisabled />
-          <Button isFillMode={false} title="Secondary loading" isLoading />
-          <Button
-            isFillMode={false}
-            title="Border loader"
-            isLoading
-            showBorderLoader
-          />
+
           <Button isFillMode={false} title="Warning Button" isWarning />
           <Button
             isFillMode={false}
@@ -119,27 +86,14 @@ const DesignSystem = () => {
             isDisabled
             isWarning
           />
-          <Button
-            isFillMode={false}
-            title="Warning Loading"
-            isWarning
-            isLoading
-          />
-          <Button
-            isFillMode={false}
-            title="Warning Loading"
-            isWarning
-            isLoading
-            isSpiner
-          />
         </div>
       </section>
       <section className="design-system-cards">
         <h1 className="typography__heading shadow-text">Cards</h1>
         <div className="grid__cards design-system-cards__container ">
-          <Card title="Manohar"  description="Hello Good Morning"/>
-          <Card title="Manohar"  description="Hello Good Morning"/>
-          <Card title="Manohar"  description="Hello Good Morning"/>
+          <Card title="Manohar" description="Hello Good Morning" />
+          <Card title="Manohar" description="Hello Good Morning" />
+          <Card title="Manohar" description="Hello Good Morning" />
         </div>
       </section>
     </div>

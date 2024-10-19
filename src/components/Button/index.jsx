@@ -1,8 +1,7 @@
-import BorderLoader from "../BorderLoader";
 import "./index.scss";
 
 const Button = ({
-  id ='',
+  id = "",
   title = "",
   type = "button",
   onClick = () => {},
@@ -26,26 +25,19 @@ const Button = ({
       disabled={isDisabled}
       onClick={onClick}
       className={`bold button 
-        ${isPrimary ? 'button--primary' : ''}
-        ${isDisabled ? 'button--disabled' : ''}
-        ${isLoading ? 'button--loading' : ''}
-        ${isSpiner ? 'button--spiner' : ''}
-        ${isFillMode ? 'button--fill' : ''}
-        ${isWarning ? 'button--warning' : ''}
-        ${isSmall ? 'button--small' : ''}
-        ${isMedium ? 'button--medium' : ''}
-        ${isOutline ? 'button--outline' : ''}
+        ${isPrimary ? "button--primary" : ""}
+        ${isDisabled ? "button--disabled" : ""}
+        ${isLoading ? "button--loading" : ""}
+        ${isSpiner ? "button--spiner" : ""}
+        ${isFillMode ? "button--fill" : ""}
+        ${isWarning ? "button--warning" : ""}
+        ${isSmall ? "button--small" : ""}
+        ${isMedium ? "button--medium" : ""}
+        ${isOutline ? "button--outline" : ""}
         `}
     >
-      {title}{isDownload ? <span className="button--download"></span> : ''}
-      {isLoading && isSpiner ? (
-				<div className="button__loader-container">
-					<BorderLoader
-						height={`${isMedium ? 25 : isSmall ? 20 : 30}px`}
-						isCalmMode={!isWarning}
-					/>
-				</div>
-			) : null}
+      {title}
+      {isDownload ? <span className="button--download"></span> : ""}
     </button>
   );
 };
