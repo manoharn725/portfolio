@@ -9,7 +9,9 @@ const ToggleButton = () => {
       <div className={`theme-${isDarkTheme ? "dark" : "light"}`} />
       <span
         style={{
-          backgroundImage: `var(--${isDarkTheme ? "dark-mode" : "light-mode"}-img)`,
+          backgroundImage: `var(--${
+            isDarkTheme ? "dark-mode" : "light-mode"
+          }-img)`,
           backgroundPosition: `${isDarkTheme ? "4px" : "34px"} center`,
         }}
         className="toggle-button__slider"

@@ -19,7 +19,9 @@
     background-color: azure;
     width: 100%;
     height: auto;
-    padding-bottom: calc(100% / (var(--aspect-ratio))); // Fallback height for aspect ratio
+    padding-bottom: calc(
+      100% / (var(--aspect-ratio))
+    ); // Fallback height for aspect ratio
     aspect-ratio: var(--aspect-ratio);
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,11 +53,11 @@
     &--top {
       & ul {
         & li {
-          &:not(:first-child){
+          &:not(:first-child) {
             background-image: var(--right-arrow-img);
           }
           list-style: none;
-       
+
           padding-left: 25px;
           background-position: left top;
           background-size: 20px;
@@ -72,7 +74,6 @@
       flex-direction: column;
       gap: 10px;
       .developers {
-        
         .developer {
           padding-top: 5px;
           display: flex;

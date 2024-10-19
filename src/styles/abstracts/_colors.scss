@@ -16,24 +16,23 @@ $color-tertiary-dark: #117a8b;
 $color-base-1: #ffffff;
 $color-base-2: #eee;
 
-
 $color-grey-dark-1: #999;
 $color-grey-dark-2: #333;
 
 $color-white: #fff;
 $color-black: #000;
 
-$color-error: #FF4232;
-$color-link:#1592e6;
+$color-error: #ff4232;
+$color-link: #1592e6;
 
 $border-color: rgba(37, 39, 52, 0.1);
 
 //DESIGN SYSTEM
-.shadow-text{
-    text-shadow: 7px 4px 0px $color-primary-light;
+.shadow-text {
+  text-shadow: 7px 4px 0px $color-primary-light;
 }
 
-.typography__heading{
-    border-bottom:2px solid $color-black;
-    margin-bottom: 3rem;
+.typography__heading {
+  border-bottom: 2px solid $color-black;
+  margin-bottom: 3rem;
 }

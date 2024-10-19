@@ -3,7 +3,6 @@ import Modal from "../Modal";
 import Button from "../Button";
 import "./index.scss";
 
-
 const Card = ({
   icon = "man",
   image = "",
@@ -38,7 +37,7 @@ const Card = ({
           ></i>
 
           <h6 className="card__content--title">{title}</h6>
-          
+
           <ul>
             {Array.isArray(description) ? (
               description.map((desc, index) => <li key={index}>{desc}</li>)

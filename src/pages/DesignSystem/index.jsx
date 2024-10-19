@@ -62,7 +62,6 @@ const DesignSystem = () => {
         <h1 className="typography__heading shadow-text">Loaders</h1>
         <div className="design-system-loaders__container">
           <CatLoader height="220px" />
-          
         </div>
       </section>
       <section className="design-system-buttons">

@@ -46,9 +46,11 @@ const Topbar = () => {
       <>
         <div
           className={`topbar__right ${
-            isHamburger ? `topbar__right--open topbar__right--open-${
+            isHamburger
+              ? `topbar__right--open topbar__right--open-${
                   isDarkTheme ? "dark" : "light"
-                }` : ""
+                }`
+              : ""
           }`}
         >
           {navigation.map(({ id, label, path, isDisabled }) => (
@@ -67,9 +69,7 @@ const Topbar = () => {
         </div>
         <div
           className={`topbar__hamburger ${
-            isHamburger
-              ? "topbar__hamburger--open"
-              : ""
+            isHamburger ? "topbar__hamburger--open" : ""
           }`}
           onClick={handleHamburger}
         >
@@ -91,7 +91,9 @@ const Topbar = () => {
   };
 
   return (
-    <div className={`topbar__wrap topbar__wrap-${isDarkTheme ? "dark" : "light"}`}>
+    <div
+      className={`topbar__wrap topbar__wrap-${isDarkTheme ? "dark" : "light"}`}
+    >
       <div className="container container__topbar">
         <div className="topbar__left" onClick={toHome}>
           Manohar N

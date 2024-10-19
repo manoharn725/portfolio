@@ -7,12 +7,12 @@ import skillsReducer from "../slices/skillsSlice";
 import educationReducer from "../slices/educationSlice";
 
 export const store = configureStore({
-    reducer:{
-        socialIcons:socialIconsReducer,
-        experience:experienceReducer,
-        miniProjects:miniProjectsReducer,
-        projects:projectsReducer,
-        skills:skillsReducer,
-        education:educationReducer,
-    }
-})
+  reducer: {
+    socialIcons: socialIconsReducer,
+    experience: experienceReducer,
+    miniProjects: miniProjectsReducer,
+    projects: projectsReducer,
+    skills: skillsReducer,
+    education: educationReducer,
+  },
+});

@@ -18,7 +18,7 @@
     align-items: center;
     position: relative;
 
-    & > p{
+    & > p {
       background-image: var(--wave-img);
       background-size: 20px 20px;
       background-repeat: no-repeat;
@@ -41,9 +41,9 @@
       box-shadow: 1px 2px 3px black;
       transition: all 0.2s ease;
       position: relative;
-      
-      &::before{
-        content:attr(data-social);
+
+      &::before {
+        content: attr(data-social);
         display: table;
         clear: both;
         text-transform: capitalize;
@@ -53,14 +53,14 @@
         text-decoration: none;
         padding: 5px 10px;
         border-radius: 8px;
-        transform: translate(-10px,-35px) rotate(25deg);
-        transform: translate(0px,0px) rotate(25deg);
+        transform: translate(-10px, -35px) rotate(25deg);
+        transform: translate(0px, 0px) rotate(25deg);
         color: $color-black;
         opacity: 0;
         transition: all 0.5s ease;
       }
-      &::after{
-        content:'';
+      &::after {
+        content: "";
         display: table;
         clear: both;
         width: 0;
@@ -68,21 +68,20 @@
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         border-top: 12px solid $color-base-2;
-        transform: translate(5px,-16px) rotate(25deg);
-        transform: translate(0px,-0px) rotate(25deg);
+        transform: translate(5px, -16px) rotate(25deg);
+        transform: translate(0px, -0px) rotate(25deg);
         opacity: 0;
         transition: all 0.5s ease;
       }
       &:hover {
         transform: scale(1.2);
-      
 
-        &::before{
-          transform: translate(-10px,-45px) rotate(0deg);
+        &::before {
+          transform: translate(-10px, -45px) rotate(0deg);
           opacity: 1;
         }
-        &::after{
-          transform: translate(5px,-17px) rotate(0deg);
+        &::after {
+          transform: translate(5px, -17px) rotate(0deg);
           opacity: 1;
         }
       }
@@ -113,7 +112,6 @@
 
 //ABOUT
 .about__section {
-
   &--content {
     display: flex;
     flex-wrap: wrap-reverse;

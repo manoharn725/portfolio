@@ -1,74 +1,74 @@
-:root{
-    //CARD TEST IMAGES
-    --elephant-img: url(../../assets/elephant.svg);
-    --man-img: url(../../assets/man.svg);
-    --close-icon-img: url(../../assets/close-icon.svg);
+:root {
+  //CARD TEST IMAGES
+  --elephant-img: url(../../assets/elephant.svg);
+  --man-img: url(../../assets/man.svg);
+  --close-icon-img: url(../../assets/close-icon.svg);
 
-    //ICONS
-    --right-arrow-img: url(../../assets/right-arrow.svg);
+  //ICONS
+  --right-arrow-img: url(../../assets/right-arrow.svg);
 
-    //RESUME
-    --my-resume-pdf: url(../../assets/manohar-resume.pdf);
+  //RESUME
+  --my-resume-pdf: url(../../assets/manohar-resume.pdf);
 
-    //EDUCATION
-    --jnv-tumkur-logo-img: url(../../assets/jnv-tumkur-logo.png);
-    --skit-logo-img: url(../../assets/skit-logo.jpg);
-    --jnv-tumkur-img: url(../../assets/jnv-tumkur.jpg);
-    --swami-vivekananda-pu-college-img: url(../../assets/swami-vivekananda-pu-college.png);
-    --skit-college-img: url(../../assets/skit-college.jpg);
+  //EDUCATION
+  --jnv-tumkur-logo-img: url(../../assets/jnv-tumkur-logo.png);
+  --skit-logo-img: url(../../assets/skit-logo.jpg);
+  --jnv-tumkur-img: url(../../assets/jnv-tumkur.jpg);
+  --swami-vivekananda-pu-college-img: url(../../assets/swami-vivekananda-pu-college.png);
+  --skit-college-img: url(../../assets/skit-college.jpg);
 
-    //MINIPROJECT
-    --search-movies-img: url(../../assets/search-movies.png);
+  //MINIPROJECT
+  --search-movies-img: url(../../assets/search-movies.png);
 
-    //PROJECT
-    --inflex-logo-img: url(../../assets/influx-logo.svg);
-    --inflex-image-img: url(../../assets/inflex-image.png);
+  //PROJECT
+  --inflex-logo-img: url(../../assets/influx-logo.svg);
+  --inflex-image-img: url(../../assets/inflex-image.png);
 
-    //DEVELOPER IMAGES
-    --kushagra-img: url(../../assets/kushagra.jpg);
-    --manohar-img: url(../../assets/manohar.jpg);
-    --santhosh-img: url(../../assets/santhosh.jpg);
-    --saravanan-img: url(../../assets/saravanan.jpg);
+  //DEVELOPER IMAGES
+  --kushagra-img: url(../../assets/kushagra.jpg);
+  --manohar-img: url(../../assets/manohar.jpg);
+  --santhosh-img: url(../../assets/santhosh.jpg);
+  --saravanan-img: url(../../assets/saravanan.jpg);
 
-    //HOME PAGE
-    --wave-img: url(../../assets/wave.gif);
-    --light-theme-avatar-img: url(../../assets/light-theme-avatar.gif);
-    --dark-theme-avatar-img: url(../../assets/dark-theme-avatar.gif);
-    --frontend-developer-icons-img: url(../../assets/frontend-developer-icons.json);
-    --day-mode-developer-img: url(../../assets/day-mode-developer.json);
-    --night-mode-developer-img: url(../../assets/night-mode-developer.json);
-    --night-mode-developer-v1-img: url(../../assets/night-mode-developer-v1.json);
+  //HOME PAGE
+  --wave-img: url(../../assets/wave.gif);
+  --light-theme-avatar-img: url(../../assets/light-theme-avatar.gif);
+  --dark-theme-avatar-img: url(../../assets/dark-theme-avatar.gif);
+  --frontend-developer-icons-img: url(../../assets/frontend-developer-icons.json);
+  --day-mode-developer-img: url(../../assets/day-mode-developer.json);
+  --night-mode-developer-img: url(../../assets/night-mode-developer.json);
+  --night-mode-developer-v1-img: url(../../assets/night-mode-developer-v1.json);
 
-    //SOCIAL ICONS
-    --gmail-img: url(../../assets/gmail.svg);
-    --instagram-img: url(../../assets/instagram.svg);
-    --linkedin-img: url(../../assets/linkedin.svg);
-    --github-img: url(../../assets/github.svg);
-    --download-img: url(../../assets/download.svg);
+  //SOCIAL ICONS
+  --gmail-img: url(../../assets/gmail.svg);
+  --instagram-img: url(../../assets/instagram.svg);
+  --linkedin-img: url(../../assets/linkedin.svg);
+  --github-img: url(../../assets/github.svg);
+  --download-img: url(../../assets/download.svg);
 
-    //COMPANY LOGOS
-    --signant-health-logo-img: url(../../assets/signant-health-logo.jpg);
-    --render-infotech-logo-img: url(../../assets/render-infotech-logo.jpg);
+  //COMPANY LOGOS
+  --signant-health-logo-img: url(../../assets/signant-health-logo.jpg);
+  --render-infotech-logo-img: url(../../assets/render-infotech-logo.jpg);
 
-    //TOOLS IS USE ICONS
-    --bootstrap-img: url(../../assets/bootstrap.svg);
-    --css-3-img: url(../../assets/css-3.svg);
-    --git-img: url(../../assets/git.svg);
-    --html-5-img: url(../../assets/html-5.svg);
-    --javascript-img: url(../../assets/javascript.svg);
-    --mongodb-img: url(../../assets/mongodb.svg);
-    --next-js-img: url(../../assets/next-js.svg);
-    --nodejs-img: url(../../assets/nodejs.svg);
-    --photoshop-img: url(../../assets/photoshop.svg);
-    --postman-img: url(../../assets/postman.svg);
-    --react-js-img: url(../../assets/react-js.svg);
-    --redux-img: url(../../assets/redux.svg);
-    --scss-img: url(../../assets/scss.svg);
-    --sql-ssms-img: url(../../assets/sql-ssms.svg);
-    --typescript-img: url(../../assets/typescript.svg);
-    --vs-code-img: url(../../assets/visual-studio-code.svg);
+  //TOOLS IS USE ICONS
+  --bootstrap-img: url(../../assets/bootstrap.svg);
+  --css-3-img: url(../../assets/css-3.svg);
+  --git-img: url(../../assets/git.svg);
+  --html-5-img: url(../../assets/html-5.svg);
+  --javascript-img: url(../../assets/javascript.svg);
+  --mongodb-img: url(../../assets/mongodb.svg);
+  --next-js-img: url(../../assets/next-js.svg);
+  --nodejs-img: url(../../assets/nodejs.svg);
+  --photoshop-img: url(../../assets/photoshop.svg);
+  --postman-img: url(../../assets/postman.svg);
+  --react-js-img: url(../../assets/react-js.svg);
+  --redux-img: url(../../assets/redux.svg);
+  --scss-img: url(../../assets/scss.svg);
+  --sql-ssms-img: url(../../assets/sql-ssms.svg);
+  --typescript-img: url(../../assets/typescript.svg);
+  --vs-code-img: url(../../assets/visual-studio-code.svg);
 
-    //WEBSITE MODE
-    --light-mode-img: url(../../assets/light-mode.svg);
-    --dark-mode-img: url(../../assets/dark-mode.svg);
+  //WEBSITE MODE
+  --light-mode-img: url(../../assets/light-mode.svg);
+  --dark-mode-img: url(../../assets/dark-mode.svg);
 }
