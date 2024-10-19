@@ -6,7 +6,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  --topbar-height:6.3rem;
+  --topbar-height: 6.3rem;
   --desktop-width: calc(100% - 120rem);
   --mobile-width: calc(100% - 2rem);
 
@@ -22,17 +22,17 @@
   margin: 0 auto;
   overflow: hidden;
 
-  &__topbar{
+  &__topbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 12px
-    clamp(
-      var(--mobile-padding-left-right),
-      4.5vw,
-      var(--desktop-padding-left-right)
-    );
+      clamp(
+        var(--mobile-padding-left-right),
+        4.5vw,
+        var(--desktop-padding-left-right)
+      );
   }
 
   &__center {
