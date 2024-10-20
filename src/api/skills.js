@@ -25,7 +25,7 @@ export const skills = [
   },
   {
     skill: "redux-toolkit",
-    skillUrl: "https://redux.js.org/introduction/getting-started",
+    skillUrl: "https://redux-toolkit.js.org/",
   },
   {
     skill: "sql-ssms",
