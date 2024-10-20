@@ -24,7 +24,7 @@ export const skills = [
     skillUrl: "https://reactjs.org/",
   },
   {
-    skill: "redux",
+    skill: "redux-toolkit",
     skillUrl: "https://redux.js.org/",
   },
   {
@@ -47,7 +47,6 @@ export const skills = [
     skill: "photoshop",
     skillUrl: "https://whatwg.org/",
   },
-
   // {
   //   skill: "next-js",
   //   skillUrl: "https://whatwg.org/",
