@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./context/Theme/ThemeContext";
 import App from "./App";
-import { store } from "./redux/store";
+import { store } from "./store/store";
 
 const el = document.getElementById("root");
 
