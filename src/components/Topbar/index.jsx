@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ToggleButton from "../ToggleButton";
-import { useTheme } from "../../context/themeContext";
+import { useTheme } from "../../context/Theme/useThemeContext";
 import "./index.scss";
 
 const Topbar = () => {

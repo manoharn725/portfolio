@@ -1,4 +1,4 @@
-import { useTheme } from "../../context/themeContext";
+import { useTheme } from "../../context/Theme/useThemeContext";
 import "./index.scss";
 
 const ToggleButton = () => {

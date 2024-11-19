@@ -4,7 +4,7 @@ import Card from "../../components/Card";
 import resume from "../../assets/manohar-resume.pdf";
 import Lottie from "lottie-react";
 import developer from "../../assets/frontend-developer-icons.json";
-import { useTheme } from "../../context/themeContext";
+import { useTheme } from "../../context/Theme/useThemeContext";
 import { useSelector } from "react-redux";
 import "./index.scss";
 
