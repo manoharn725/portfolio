@@ -1,5 +1,21 @@
 export const experience = [
   {
+    companyUrl: "https://www.renderinfotech.com/",
+    companyLogo: "render-infotech-logo",
+    companyName: "RenderInfotech",
+    totalExperience: "Full-time 1y 7mos",
+    designation: [
+      {
+        designationTitle: "Software Developer",
+        designationDurationFromDate: "Sep 2021",
+        designationDurationEndDtae: "Mar 2023",
+        designationDuration: "1y 7mos",
+        officeLocation: "Bel-Circle Bangalore",
+        officeWorkSystem: "",
+      },
+    ],
+  },
+  {
     companyUrl: "https://signanthealth.com/",
     companyLogo: "signant-health-logo",
     companyName: "SigantHealth",
@@ -20,22 +36,6 @@ export const experience = [
         designationDuration: "1y 2mos",
         officeLocation: "Whitefield Bangalore",
         officeWorkSystem: "Hybrid",
-      },
-    ],
-  },
-  {
-    companyUrl: "https://www.renderinfotech.com/",
-    companyLogo: "render-infotech-logo",
-    companyName: "RenderInfotech",
-    totalExperience: "Full-time 1y 7mos",
-    designation: [
-      {
-        designationTitle: "Software Developer",
-        designationDurationFromDate: "Sep 2021",
-        designationDurationEndDtae: "Mar 2023",
-        designationDuration: "1y 7mos",
-        officeLocation: "Bel-Circle Bangalore",
-        officeWorkSystem: "",
       },
     ],
   },

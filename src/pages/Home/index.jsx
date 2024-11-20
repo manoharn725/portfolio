@@ -92,14 +92,17 @@ const Home = () => {
       <section className="experience__section">
         <h2 className="experience__section--title">Experience</h2>
         <div className="experience__wrap">
-          {experience.map(
-            ({
-              companyUrl,
-              companyLogo,
-              companyName,
-              totalExperience,
-              designation,
-            }) => (
+          {[...experience].reverse().map(
+            (
+              {
+                companyUrl,
+                companyLogo,
+                companyName,
+                totalExperience,
+                designation,
+              } //[...experience] creates a shallow copy of the experience array.
+            ) => (
+              //Reversing the copied array ([...experience].reverse()) ensures the original array remains unchanged.
               <div className="experience" key={companyLogo}>
                 <a
                   href={companyUrl}
@@ -149,53 +152,57 @@ const Home = () => {
       <section className="projects__section">
         <h2 className="projects__section--title">Mini Projects</h2>
         <div className="project grid__cards">
-          {miniProjects.map(
-            ({
-              index,
-              projectIcon,
-              projectImage,
-              peojectUrl,
-              projectTitle,
-              projectDescription,
-            }) => (
-              <Card
-                key={index}
-                icon={projectIcon}
-                image={projectImage}
-                url={peojectUrl}
-                title={projectTitle}
-                description={projectDescription}
-              />
-            )
-          )}
+          {[...miniProjects]
+            .reverse()
+            .map(
+              ({
+                index,
+                projectIcon,
+                projectImage,
+                peojectUrl,
+                projectTitle,
+                projectDescription,
+              }) => (
+                <Card
+                  key={index}
+                  icon={projectIcon}
+                  image={projectImage}
+                  url={peojectUrl}
+                  title={projectTitle}
+                  description={projectDescription}
+                />
+              )
+            )}
         </div>
       </section>
 
       <section className="projects__section">
         <h2 className="projects__section--title">Projects</h2>
         <div className="project grid__cards">
-          {projects.map(
-            ({
-              index,
-              projectIcon,
-              projectImage,
-              peojectUrl,
-              projectTitle,
-              projectDescription,
-              projectDevelopers,
-            }) => (
-              <Card
-                key={index}
-                icon={projectIcon}
-                image={projectImage}
-                url={peojectUrl}
-                title={projectTitle}
-                description={projectDescription}
-                developers={projectDevelopers}
-                isDevelopers
-              />
-            )
-          )}
+          {[...projects]
+            .reverse()
+            .map(
+              ({
+                index,
+                projectIcon,
+                projectImage,
+                peojectUrl,
+                projectTitle,
+                projectDescription,
+                projectDevelopers,
+              }) => (
+                <Card
+                  key={index}
+                  icon={projectIcon}
+                  image={projectImage}
+                  url={peojectUrl}
+                  title={projectTitle}
+                  description={projectDescription}
+                  developers={projectDevelopers}
+                  isDevelopers
+                />
+              )
+            )}
         </div>
       </section>
 
@@ -223,25 +230,27 @@ const Home = () => {
       <section className="education__section">
         <h2 className="education__section--title">Education</h2>
         <div className="education grid__cards">
-          {education.map(
-            ({
-              index,
-              schoolIcon,
-              schoolImage,
-              schoolName,
-              course,
-              schoolUrl,
-            }) => (
-              <Card
-                key={index}
-                icon={schoolIcon}
-                image={schoolImage}
-                url={schoolUrl}
-                title={schoolName}
-                description={course}
-              />
-            )
-          )}
+          {[...education]
+            .reverse()
+            .map(
+              ({
+                index,
+                schoolIcon,
+                schoolImage,
+                schoolName,
+                course,
+                schoolUrl,
+              }) => (
+                <Card
+                  key={index}
+                  icon={schoolIcon}
+                  image={schoolImage}
+                  url={schoolUrl}
+                  title={schoolName}
+                  description={course}
+                />
+              )
+            )}
         </div>
       </section>
     </div>
