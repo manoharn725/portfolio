@@ -20,4 +20,15 @@ export const miniProjects = [
       "Utilized dispatch to trigger actions and update state, ensuring a dynamic and interactive user experience.",
     ],
   },
+  {
+    projectIcon: "vite-js",
+    peojectUrl: "https://mockapi-student-data.netlify.app/",
+    projectImage: "mockapi-student-data",
+    projectTitle: "mockapi-student-data",
+    projectDescription: [
+      "Built a student management app using React and Redux Toolkit Query, performing efficient CRUD operations with data stored on MockAPI.",
+      "Enabled adding, editing, and deleting student records dynamically, leveraging mutations for seamless state updates and API interactions.",
+      "Ensured responsive design and interactive user experience by utilizing useQuery and useMutation hooks for real-time data fetching and state management.",
+    ],
+  },
 ];
