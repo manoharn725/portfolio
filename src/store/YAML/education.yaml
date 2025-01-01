@@ -1,0 +1,136 @@
+openapi: 3.0.0
+info:
+  title: Education
+  description: API documentation for personal portfolio education details
+  version: 1.0.0
+servers:
+  - url: https://localhost:3000
+    description: Local server
+paths:
+  /api/education:
+    get:
+      summary: Get all education records
+      responses:
+        "200":
+          description: List of education records
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                    schoolIcon:
+                      type: string
+                    schoolImage:
+                      type: string
+                    schoolName:
+                      type: string
+                    course:
+                      type: string
+                    schoolUrl:
+                      type: string
+    post:
+      summary: Create new education records
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                schoolIcon:
+                  type: string
+                schoolImage:
+                  type: string
+                schoolName:
+                  type: string
+                course:
+                  type: string
+                schoolUrl:
+                  type: string
+              required:
+                - schoolIcon
+                - schoolImage
+                - schoolName
+                - course
+                - schoolUrl
+      responses:
+        "201":
+          description: Education record created successfully
+  /api/education/{id}:
+    get:
+      summary: Get an education record by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: number
+      responses:
+        "200":
+          description: Education record details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                  schoolIcon:
+                    type: string
+                  schoolImage:
+                    type: string
+                  schoolName:
+                    type: string
+                  course:
+                    type: string
+                  schoolUrl:
+                    type: string
+        "404":
+          description: Education record not found
+    put:
+      summary: Update an education record by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: number
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                schoolIcon:
+                  type: string
+                schoolImage:
+                  type: string
+                schoolName:
+                  type: string
+                course:
+                  type: string
+                schoolUrl:
+                  type: string
+      responses:
+        "200":
+          description: Education record updated successfully
+        "404":
+          description: Education record not found
+    delete:
+      summary: Delete an education record by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: number
+      responses:
+        "204":
+          description: Education record deleted successfully
+        "404":
+          description: Education record not found
