@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     projectIcon: "inflex-logo",
-    peojectUrl: "https://socialinflux.io",
+    peojectUrl: "https://socialinflux.io/landing-page",
     projectImage: "inflex-image",
     projectTitle: "Inflex",
     projectDescription: [
