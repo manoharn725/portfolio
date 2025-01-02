@@ -55,10 +55,10 @@ export const skills = [
   //   skill: "mongodb",
   //   skillUrl: "https://www.mongodb.com/try/download/community",
   // },
-  // {
-  //   skill: "postman",
-  //   skillUrl: "https://www.postman.com/",
-  // },
+  {
+    skill: "postman",
+    skillUrl: "https://www.postman.com/",
+  },
   // {
   //   skill: "nodejs",
   //   skillUrl: "https://nodejs.org/en",
