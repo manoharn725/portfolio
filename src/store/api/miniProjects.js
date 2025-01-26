@@ -7,6 +7,7 @@ export const miniProjects = [
     projectDescription: [
       "Developed a Search Movies website integrating Rapid API for real-time movie data",
       "Implemented efficient search functionality, enabling users to find detailed movie information seamlessly through a responsive and intuitive interface.",
+      "By default, displayed movies related to the term 'Mad Max,' providing users with a curated initial experience.",
     ],
   },
   {
@@ -22,13 +23,24 @@ export const miniProjects = [
   },
   {
     projectIcon: "vite-js",
-    peojectUrl: "https://mockapi-student-data.netlify.app/",
+    peojectUrl: "https://manohar-mockapi-student-data.netlify.app/",
     projectImage: "mockapi-student-data",
     projectTitle: "mockapi-student-data",
     projectDescription: [
       "Built a student management app using React and Redux Toolkit Query, performing efficient CRUD operations with data stored on MockAPI.",
       "Enabled adding, editing, and deleting student records dynamically, leveraging mutations for seamless state updates and API interactions.",
       "Ensured responsive design and interactive user experience by utilizing useQuery and useMutation hooks for real-time data fetching and state management.",
+    ],
+  },
+  {
+    projectIcon: "vite-js",
+    peojectUrl: "https://manohar-openweather.netlify.app/",
+    projectImage: "openweather",
+    projectTitle: "Weather App",
+    projectDescription: [
+      "Developed a weather forecasting app using React and Redux Toolkit Query, seamlessly integrating the OpenWeatherMap API for real-time data retrieval",
+      "Implemented a search feature with dynamic suggestion lists, enabling users to easily find cities and view accurate weather data.",
+      "Displayed 5-day weather forecasts with a responsive design, allowing users to check detailed forecasts for specific upcoming days for an engaging and user-friendly experience across all devices.",
     ],
   },
 ];
