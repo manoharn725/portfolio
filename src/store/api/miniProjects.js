@@ -40,7 +40,7 @@ export const miniProjects = [
     projectDescription: [
       "Developed a weather forecasting app using React and Redux Toolkit Query, seamlessly integrating the OpenWeatherMap API for real-time data retrieval",
       "Implemented a search feature with dynamic suggestion lists, enabling users to easily find cities and view accurate weather data.",
-      "Displayed 5-day weather forecasts with a responsive design, allowing users to check detailed forecasts for specific upcoming days for an engaging and user-friendly experience across all devices.",
+      "Displayed 5-day weather forecasts with a responsive design, allowing users to check detailed forecasts for specific upcoming days. Added temperature and humidity charts to dynamically showcase weather data.",
     ],
   },
 ];
