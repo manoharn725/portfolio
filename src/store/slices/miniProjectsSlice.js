@@ -7,4 +7,4 @@ const miniPorjectsSlice = createSlice({
   reducers: {},
 });
 
-export default miniPorjectsSlice.reducer;
+export const miniProjectsReducer = miniPorjectsSlice.reducer;

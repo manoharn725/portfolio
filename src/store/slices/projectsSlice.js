@@ -7,4 +7,4 @@ const projectsSlice = createSlice({
   reducers: {},
 });
 
-export default projectsSlice.reducer;
+export const projectsReducer = projectsSlice.reducer;

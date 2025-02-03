@@ -7,4 +7,4 @@ const experienceSlice = createSlice({
   reducers: {},
 });
 
-export default experienceSlice.reducer;
+export const experienceReducer = experienceSlice.reducer;

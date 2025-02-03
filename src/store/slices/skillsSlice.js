@@ -7,4 +7,4 @@ const skillsSlice = createSlice({
   reducers: {},
 });
 
-export default skillsSlice.reducer;
+export const skillsReducer = skillsSlice.reducer;

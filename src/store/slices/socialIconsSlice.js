@@ -7,4 +7,4 @@ const socialIconsSlice = createSlice({
   reducers: {},
 });
 
-export default socialIconsSlice.reducer;
+export const socialIconsReducer = socialIconsSlice.reducer;
