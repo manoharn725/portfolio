@@ -19,13 +19,13 @@ export const experience = [
     companyUrl: "https://signanthealth.com/",
     companyLogo: "signant-health-logo",
     companyName: "SigantHealth",
-    totalExperience: "Full-time 1y 11mos",
+    totalExperience: "Full-time 2y",
     designation: [
       {
         designationTitle: "SDE - 1",
         designationDurationFromDate: "Apr 2024",
         designationDurationEndDtae: "Presnt",
-        designationDuration: "10mos",
+        designationDuration: "11mos",
         officeLocation: "Whitefield Bangalore",
         officeWorkSystem: "Hybrid",
       },
