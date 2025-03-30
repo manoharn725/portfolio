@@ -25,7 +25,7 @@ export const projects = [
         projectDeveloperDesignation: "Backend",
       },
       {
-        projectDeveloperImage: "man",
+        projectDeveloperImage: "vijay",
         projectDeveloperName: "Vijay",
         projectDeveloperDesignation: "Environment",
       },
