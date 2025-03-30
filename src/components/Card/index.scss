@@ -94,7 +94,7 @@
             position: relative;
 
             &::before {
-              content: attr(data-developerName);
+              content: attr(data-developer-name);
               display: table;
               clear: both;
               padding: 5px 10px;

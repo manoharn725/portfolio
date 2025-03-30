@@ -1,15 +1,13 @@
-import { useSelector } from "react-redux";
+import { socialIcons } from "../../utils/socialIconsInfo";
 import "./index.scss";
 
 const Footer = () => {
-  const socialIcons = useSelector((state) => state.socialIcons);
-
   return (
     <div className="footer__wrap">
       <div className="container footer__container">
         <div className="footer__left">Manohar</div>
         <div className="footer__right">
-          {socialIcons.map(({ icon, url, index }) => (
+          {socialIcons.map(({ icon, url }, index) => (
             <a
               key={index}
               href={url || ""}

@@ -5,14 +5,17 @@ import resume from "../../assets/manohar-resume.pdf";
 import Lottie from "lottie-react";
 import developer from "../../assets/frontend-developer-icons.json";
 import { useTheme } from "../../context/Theme/useThemeContext";
-import { useSelector } from "react-redux";
+import { education } from "../../utils/educationInfo";
+import { experience } from "../../utils/experienceInfo";
+import { miniProjects } from "../../utils/miniProjectsInfo";
+import { projects } from "../../utils/projectsInfo";
+import { skills } from "../../utils/skillsInfo";
+import { socialIcons } from "../../utils/socialIconsInfo";
+
 import "./index.scss";
 
 const Home = () => {
   const { isDarkTheme } = useTheme();
-
-  const { socialIcons, experience, miniProjects, projects, skills, education } =
-    useSelector((state) => state);
 
   const [text] = useTypewriter({
     words: [
@@ -34,7 +37,7 @@ const Home = () => {
           <h3>Manohar</h3>
           <h6>{text}|</h6>
           <div className="hero__section--social-icons">
-            {socialIcons.map(({ icon, url, index }) => (
+            {socialIcons.map(({ icon, url }, index) => (
               <a
                 href={url || ""}
                 target="_blank"
@@ -119,15 +122,17 @@ const Home = () => {
                     {totalExperience}
                   </div>
                   {designation.map(
-                    ({
-                      index,
-                      designationTitle,
-                      designationDurationFromDate,
-                      designationDurationEndDtae,
-                      designationDuration,
-                      officeLocation,
-                      officeWorkSystem,
-                    }) => (
+                    (
+                      {
+                        designationTitle,
+                        designationDurationFromDate,
+                        designationDurationEndDtae,
+                        designationDuration,
+                        officeLocation,
+                        officeWorkSystem,
+                      },
+                      index
+                    ) => (
                       <div key={index} className="designation">
                         <div className="designation__title">
                           {designationTitle}
@@ -156,13 +161,13 @@ const Home = () => {
             .reverse()
             .map(
               ({
-                index,
+                
                 projectIcon,
                 projectImage,
                 peojectUrl,
                 projectTitle,
                 projectDescription,
-              }) => (
+              }, index) => (
                 <Card
                   key={index}
                   icon={projectIcon}
@@ -183,14 +188,14 @@ const Home = () => {
             .reverse()
             .map(
               ({
-                index,
+                
                 projectIcon,
                 projectImage,
                 peojectUrl,
                 projectTitle,
                 projectDescription,
                 projectDevelopers,
-              }) => (
+              }, index) => (
                 <Card
                   key={index}
                   icon={projectIcon}
@@ -209,8 +214,8 @@ const Home = () => {
       <section className="skills__section">
         <h2 className="skills__section--title">Tools I Use</h2>
         <div className="skills">
-          {skills.map(({ skill, skillUrl }) => (
-            <div key={skill} className="skill__wrap">
+          {skills.map(({ skill, skillUrl }, index) => (
+            <div key={index} className="skill__wrap">
               <a
                 href={skillUrl}
                 alt={`${skill} icon`}
@@ -234,13 +239,13 @@ const Home = () => {
             .reverse()
             .map(
               ({
-                index,
+               
                 schoolIcon,
                 schoolImage,
                 schoolName,
                 course,
                 schoolUrl,
-              }) => (
+              }, index) => (
                 <Card
                   key={index}
                   icon={schoolIcon}

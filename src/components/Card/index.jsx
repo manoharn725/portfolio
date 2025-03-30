@@ -51,15 +51,15 @@ const Card = ({
             <div className="developers">
               <h6>Developers</h6>
               <div className="developer">
-                {developers.map((developer) => (
+                {developers.map((developer, index) => (
                   <div
-                    key={developer.projectDeveloperName}
+                    key={index}
                     style={{
                       backgroundImage: `var(--${developer.projectDeveloperImage}-img)`,
                     }}
                     className="developer__image"
-                    data-developerName={developer.projectDeveloperName}
-                    data-developerDesignation={
+                    data-developer-name={developer.projectDeveloperName}
+                    data-developer-designation={
                       developer.projectDeveloperDesignation
                     }
                     onClick={() => handleDeveloper(developer)}
