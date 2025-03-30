@@ -1,6 +1,6 @@
 export const miniProjects = [
   {
-    projectIcon: "react-js",
+    projectIcon: "vite-js",
     peojectUrl: "https://manohar-search-movie.netlify.app/",
     projectImage: "search-movies",
     projectTitle: "Search Movies",
@@ -33,7 +33,7 @@ export const miniProjects = [
     ],
   },
   {
-    projectIcon: "vite-js",
+    projectIcon: "openweather-logo",
     peojectUrl: "https://manohar-openweather.netlify.app/",
     projectImage: "openweather",
     projectTitle: "Weather App",

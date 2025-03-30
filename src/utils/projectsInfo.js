@@ -1,6 +1,6 @@
 export const projects = [
   {
-    projectIcon: "react-js",
+    projectIcon: "vite-js",
     peojectUrl: "#",
     projectImage: "elephant",
     projectTitle: "Sky Yoga",
