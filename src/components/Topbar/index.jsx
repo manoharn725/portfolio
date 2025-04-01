@@ -35,11 +35,11 @@ const Topbar = () => {
         label: "Design System",
         path: "/design-system",
       },
-      {
-        id: "page-not-found",
-        label: "Page Not Found",
-        path: "/page-not-found",
-      },
+      // {
+      //   id: "page-not-found",
+      //   label: "Page Not Found",
+      //   path: "/page-not-found",
+      // },
     ];
 
     return (

@@ -12,7 +12,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/design-system" element={<DesignSystem />} />
-        <Route path="/page-not-found" element={<PageNotFound />} />
+        {/* <Route path="/page-not-found" element={<PageNotFound />} /> */}
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </div>
