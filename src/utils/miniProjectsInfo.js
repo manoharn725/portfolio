@@ -43,4 +43,15 @@ export const miniProjects = [
       "Displayed 5-day weather forecasts with a responsive design, allowing users to check detailed forecasts for specific upcoming days. Added temperature and humidity charts to dynamically showcase weather data.",
     ],
   },
+  {
+    projectIcon: "vite-js",
+    peojectUrl: "https://manohar-authify.web.app/",
+    projectImage: "authify",
+    projectTitle: "Authify",
+    projectDescription: [
+      "Built a modern authentication app using React, Vite, TypeScript, Tailwind CSS, and Firebase, featuring clean UI and responsive design.",
+      "Developed core pages including Sign Up, Login, Home, and a custom 404 Not Found page, with Google Sign-In integration for seamless authentication.",
+      "Implemented protected routes using Firebase Auth to restrict Home access to authenticated users only, and deployed the app on Firebase Hosting. (Ongoing)",
+    ],
+  },
 ];
