@@ -79,15 +79,7 @@ const Home = () => {
           </div>
 
           <div className="about__section--descripation">
-            Passionate and responsible UI developer with 3 years of experience
-            delivering high-quality web applications. Proficient in developing
-            responsive and interactive interfaces using React, Redux,
-            TypeScript, JavaScript, HTML, CSS, SCSS, and Bootstrap.
-            Comprehensive experience in the full software development life
-            cycle, including requirements gathering, analysis, implementation,
-            testing, and maintenance. Committed to continuous self-improvement
-            and delivering solutions that exceed expectations. Additionally
-            familiar with SQL and SSMS tools.
+          Passionate and detail-oriented UI Developer with 2 years of hands-on experience in crafting responsive, user-friendly web applications. Skilled in modern JavaScript frameworks, especially React, and adept in implementing robust state management solutions using Redux Toolkit and Context API. Known for building scalable, maintainable frontends with a focus on performance optimization and clean code architecture. Strong collaborator with experience in API integration, version control. Eager to contribute to innovative teams focused on creating exceptional digital experiences.
           </div>
         </div>
       </section>
@@ -160,14 +152,16 @@ const Home = () => {
           {[...miniProjects]
             .reverse()
             .map(
-              ({
-                
-                projectIcon,
-                projectImage,
-                peojectUrl,
-                projectTitle,
-                projectDescription,
-              }, index) => (
+              (
+                {
+                  projectIcon,
+                  projectImage,
+                  peojectUrl,
+                  projectTitle,
+                  projectDescription,
+                },
+                index
+              ) => (
                 <Card
                   key={index}
                   icon={projectIcon}
@@ -187,15 +181,17 @@ const Home = () => {
           {[...projects]
             .reverse()
             .map(
-              ({
-                
-                projectIcon,
-                projectImage,
-                peojectUrl,
-                projectTitle,
-                projectDescription,
-                projectDevelopers,
-              }, index) => (
+              (
+                {
+                  projectIcon,
+                  projectImage,
+                  peojectUrl,
+                  projectTitle,
+                  projectDescription,
+                  projectDevelopers,
+                },
+                index
+              ) => (
                 <Card
                   key={index}
                   icon={projectIcon}
@@ -238,14 +234,10 @@ const Home = () => {
           {[...education]
             .reverse()
             .map(
-              ({
-               
-                schoolIcon,
-                schoolImage,
-                schoolName,
-                course,
-                schoolUrl,
-              }, index) => (
+              (
+                { schoolIcon, schoolImage, schoolName, course, schoolUrl },
+                index
+              ) => (
                 <Card
                   key={index}
                   icon={schoolIcon}
