@@ -75,11 +75,17 @@ const Home = () => {
         <h2 className="about__section--title">About</h2>
         <div className="about__section--content">
           <div className="about__section--image">
-            <Lottie animationData={developer} loop />
+            {/* <Lottie animationData={developer} loop /> */}
           </div>
 
           <div className="about__section--descripation">
-          Passionate and detail-oriented UI Developer with 2 years of hands-on experience in crafting responsive, user-friendly web applications. Skilled in modern JavaScript frameworks, especially React, and adept in implementing robust state management solutions using Redux Toolkit and Context API. Known for building scalable, maintainable frontends with a focus on performance optimization and clean code architecture. Strong collaborator with experience in API integration, version control. Eager to contribute to innovative teams focused on creating exceptional digital experiences.
+            Full-Stack Developer skilled in building scalable, secure, and
+            user-friendly web applications using React, Node.js, Express.js, and
+            PostgreSQL. Experienced in designing and integrating RESTful APIs,
+            managing state with Redux Toolkit and Context API, and optimizing
+            application performance. Adept at writing clean, maintainable code,
+            collaborating with teams, and delivering seamless end-to-end
+            solutions across the stack.
           </div>
         </div>
       </section>

@@ -59,10 +59,10 @@ export const skills = [
     skill: "postman",
     skillUrl: "https://www.postman.com/",
   },
-  // {
-  //   skill: "nodejs",
-  //   skillUrl: "https://nodejs.org/en",
-  // },
+  {
+    skill: "nodejs",
+    skillUrl: "https://nodejs.org/en",
+  },
   {
     skill: "firebase",
     skillUrl: "https://firebase.google.com/?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwktO_BhBrEiwAV70jXqSzgYwbD8ZpZPk32gilDvMI-bFEjQgcRKxsLEyMMdAARz040HV3dxoCnVwQAvD_BwE",
