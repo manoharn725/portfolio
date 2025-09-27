@@ -19,13 +19,13 @@ const Home = () => {
 
   const [text] = useTypewriter({
     words: [
-      "Frontend Developer",
-      "React-Redux Developer",
-      "Even Familiar with SQL and SSMS toll",
+      "Full-Stack Developer",
+      "Frontend with React",
+      "Backend with Node.js & PostgreSQL",
     ],
     loop: 0,
-    typeSpeed: 120,
-    deleteSpeed: 50,
+    typeSpeed: 100,
+    deleteSpeed: 40,
     delaySpeed: 1500,
   });
 
@@ -74,9 +74,9 @@ const Home = () => {
       <section id="about" className="about__section">
         <h2 className="about__section--title">About</h2>
         <div className="about__section--content">
-          <div className="about__section--image">
-            {/* <Lottie animationData={developer} loop /> */}
-          </div>
+          {/* <div className="about__section--image">
+            <Lottie animationData={developer} loop />
+          </div> */}
 
           <div className="about__section--descripation">
             Full-Stack Developer skilled in building scalable, secure, and
