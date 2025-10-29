@@ -39,4 +39,20 @@ export const experience = [
       },
     ],
   },
+  {
+    companyUrl: "https://www.ibm.com/in-en",
+    companyLogo: "ibm-logo",
+    companyName: "IBM",
+    totalExperience: "Full-time",
+    designation: [
+      {
+        designationTitle: "Software Developer",
+        designationDurationFromDate: "Oct 2025",
+        designationDurationEndDtae: "Present",
+        designationDuration: "2mos",
+        officeLocation: "BCIT Bangalore",
+        officeWorkSystem: "Hybrid",
+      }
+    ],
+  },
 ];
