@@ -12,6 +12,14 @@ export const skills = [
     skillUrl: "https://sass-lang.com/install/",
   },
   {
+    skill: "bootstrap",
+    skillUrl: "https://getbootstrap.com/",
+  },
+  {
+    skill: "tailwind",
+    skillUrl: "https://tailwindcss.com/docs/installation/using-vite",
+  },
+  {
     skill: "javascript",
     skillUrl: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
@@ -28,20 +36,36 @@ export const skills = [
     skillUrl: "https://redux-toolkit.js.org/",
   },
   {
+    skill: "ant-design",
+    skillUrl: "https://ant.design/",
+  },
+  {
+    skill: "nodejs",
+    skillUrl: "https://nodejs.org/en",
+  },
+  {
     skill: "sql-ssms",
     skillUrl: "https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16",
   },
   {
-    skill: "bootstrap",
-    skillUrl: "https://getbootstrap.com/",
+    skill: "firebase",
+    skillUrl: "https://firebase.google.com/?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwktO_BhBrEiwAV70jXqSzgYwbD8ZpZPk32gilDvMI-bFEjQgcRKxsLEyMMdAARz040HV3dxoCnVwQAvD_BwE",
+  },
+  {
+    skill: "vs-code",
+    skillUrl: "https://code.visualstudio.com/",
+  },
+  {
+    skill: "postman",
+    skillUrl: "https://www.postman.com/",
   },
   {
     skill: "git",
     skillUrl: "https://git-scm.com/",
   },
   {
-    skill: "vs-code",
-    skillUrl: "https://code.visualstudio.com/",
+    skill: "github",
+    skillUrl: "https://git-scm.com/",
   },
   {
     skill: "photoshop",
@@ -55,20 +79,4 @@ export const skills = [
   //   skill: "mongodb",
   //   skillUrl: "https://www.mongodb.com/try/download/community",
   // },
-  {
-    skill: "postman",
-    skillUrl: "https://www.postman.com/",
-  },
-  {
-    skill: "nodejs",
-    skillUrl: "https://nodejs.org/en",
-  },
-  {
-    skill: "firebase",
-    skillUrl: "https://firebase.google.com/?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwktO_BhBrEiwAV70jXqSzgYwbD8ZpZPk32gilDvMI-bFEjQgcRKxsLEyMMdAARz040HV3dxoCnVwQAvD_BwE",
-  },
-  {
-    skill: "tailwind",
-    skillUrl: "https://tailwindcss.com/docs/installation/using-vite",
-  },
 ];
