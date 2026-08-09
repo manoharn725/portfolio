@@ -124,7 +124,7 @@ const Home = () => {
                       {
                         designationTitle,
                         designationDurationFromDate,
-                        designationDurationEndDtae,
+                        designationDurationEndDate,
                         designationDuration,
                         officeLocation,
                         officeWorkSystem,
@@ -137,7 +137,7 @@ const Home = () => {
                         </div>
                         <div className="designation__duration">
                           {designationDurationFromDate} -{" "}
-                          {designationDurationEndDtae} . {designationDuration}
+                          {designationDurationEndDate} . {designationDuration}
                         </div>
                         <div className="designation__location">
                           {officeLocation} . {officeWorkSystem}

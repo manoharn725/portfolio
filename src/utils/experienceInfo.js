@@ -8,7 +8,7 @@ export const experience = [
   //     {
   //       designationTitle: "Software Developer",
   //       designationDurationFromDate: "Sep 2021",
-  //       designationDurationEndDtae: "Mar 2023",
+  //       designationDurationEndDate: "Mar 2023",
   //       designationDuration: "1y 7mos",
   //       officeLocation: "Bel-Circle Bangalore",
   //       officeWorkSystem: "",
@@ -24,7 +24,7 @@ export const experience = [
       {
         designationTitle: "SDE - 1",
         designationDurationFromDate: "Apr 2024",
-        designationDurationEndDtae: "Feb 2025",
+        designationDurationEndDate: "Feb 2025",
         designationDuration: "11mos",
         officeLocation: "Whitefield Bangalore",
         officeWorkSystem: "Hybrid",
@@ -32,7 +32,7 @@ export const experience = [
       {
         designationTitle: "UI Developer",
         designationDurationFromDate: "Mar 2023",
-        designationDurationEndDtae: "Apr 2024",
+        designationDurationEndDate: "Apr 2024",
         designationDuration: "1y 2mos",
         officeLocation: "Whitefield Bangalore",
         officeWorkSystem: "Hybrid",
@@ -43,12 +43,12 @@ export const experience = [
     companyUrl: "https://www.ibm.com/in-en",
     companyLogo: "ibm-logo",
     companyName: "IBM",
-    totalExperience: "Full-time 4mos",
+    totalExperience: "Full-time 11mos",
     designation: [
       {
         designationTitle: "Software Developer",
         designationDurationFromDate: "Oct 2025",
-        designationDurationEndDtae: "Present",
+        designationDurationEndDate: "Present",
         designationDuration: "11mos",
         officeLocation: "BCIT Bangalore",
         officeWorkSystem: "Hybrid",
