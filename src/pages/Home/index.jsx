@@ -83,13 +83,7 @@ const Home = () => {
           </div> */}
 
           <div className="about__section--descripation">
-            Full-Stack Developer skilled in building scalable, secure, and
-            user-friendly web applications using React, Node.js, Express.js, and
-            PostgreSQL. Experienced in designing and integrating RESTful APIs,
-            managing state with Redux Toolkit and Context API, and optimizing
-            application performance. Adept at writing clean, maintainable code,
-            collaborating with teams, and delivering seamless end-to-end
-            solutions across the stack.
+            Full-Stack Developer with 3 years of experience building high-performance, responsive, and user-focused web applications using React.js, JavaScript, TypeScript, Node.js, Express.js, and PostgreSQL. Skilled in scalable UI architecture, Micro Frontends, reusable component design, state management with Redux Toolkit and Context API, RESTful API development and integration, database management, and application performance optimization. Experienced in developing secure, maintainable, and production-ready applications across the frontend and backend. Proficient in AI-assisted development using GitHub Copilot to accelerate development and improve code quality, with a strong focus on delivering seamless end-to-end user experiences.
           </div>
         </div>
       </section>
