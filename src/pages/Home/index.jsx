@@ -6,7 +6,11 @@ import resume from "../../assets/manohar-resume.pdf";
 // import developer from "../../assets/frontend-developer-icons.json";
 import { useTheme } from "../../context/Theme/useThemeContext";
 import { education } from "../../utils/educationInfo";
-import { experience } from "../../utils/experienceInfo";
+import {
+  experience,
+  getDesignationDuration,
+  getExperienceTotal,
+} from "../../utils/experienceInfo";
 import { miniProjects } from "../../utils/miniProjectsInfo";
 import { projects } from "../../utils/projectsInfo";
 import { skills } from "../../utils/skillsInfo";
@@ -117,7 +121,7 @@ const Home = () => {
                 <div className="company__detailes">
                   <div className="company__title">{companyName}</div>
                   <div className="company__total--experience">
-                    {totalExperience}
+                    {getExperienceTotal({ designation })}
                   </div>
                   {designation.map(
                     (
@@ -125,7 +129,6 @@ const Home = () => {
                         designationTitle,
                         designationDurationFromDate,
                         designationDurationEndDate,
-                        designationDuration,
                         officeLocation,
                         officeWorkSystem,
                       },
@@ -136,8 +139,7 @@ const Home = () => {
                           {designationTitle}
                         </div>
                         <div className="designation__duration">
-                          {designationDurationFromDate} -{" "}
-                          {designationDurationEndDate} . {designationDuration}
+                          {designationDurationFromDate} - {designationDurationEndDate} . {getDesignationDuration({ designationDurationFromDate, designationDurationEndDate })}
                         </div>
                         <div className="designation__location">
                           {officeLocation} . {officeWorkSystem}
