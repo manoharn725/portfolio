@@ -22,9 +22,9 @@ const Modal = ({ isDevelopers = false, developer = {}, onClose }) => {
           >
             <div
               style={{
-                backgroundImage: `var(--${developer.projectDeveloperImage}-img)`,
+                backgroundImage: `var(--${developer.projectDeveloperImage === '#' ? 'man' : developer.projectDeveloperImage}-img)`,
               }}
-              className="modal__box--developer-image"
+              className="modal__box--developer-image developer__image"
             ></div>
             <div className="modal__box--developer-detailes">
               <div className="modal__box--developer-name">

@@ -49,7 +49,7 @@ export const experience = [
         designationTitle: "Software Developer",
         designationDurationFromDate: "Oct 2025",
         designationDurationEndDtae: "Present",
-        designationDuration: "4mos",
+        designationDuration: "11mos",
         officeLocation: "BCIT Bangalore",
         officeWorkSystem: "Hybrid",
       }

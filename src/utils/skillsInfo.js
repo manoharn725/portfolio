@@ -44,6 +44,10 @@ export const skills = [
     skillUrl: "https://nodejs.org/en",
   },
   {
+    skill: "postgresql",
+    skillUrl: "https://www.postgresql.org/",
+  },
+  {
     skill: "sql-ssms",
     skillUrl: "https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16",
   },

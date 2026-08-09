@@ -60,4 +60,36 @@ export const projects = [
       },
     ],
   },
+    {
+    projectIcon: "tradeplan-logo",
+    peojectUrl: "https://tradeplan.tech/",
+    projectImage: "tradeplan-image",
+    projectTitle: "TradePlan",
+    projectDescription: [
+      "Developed responsive user interfaces for the landing page, authentication flow, strategy builder, strategy list, analysis dashboard, and trade discipline modules using React.js, Ant Design (AntD), and Tailwind CSS.",
+      "Built features for creating and managing trading strategies, allowing users to define custom trading logic, maintain strategy descriptions, monitor trading behavior, and analyze trading performance.",
+    ],
+    projectDevelopers: [
+      {
+        projectDeveloperImage: "#",
+        projectDeveloperName: "Bhuvaneshwar",
+        projectDeveloperDesignation: "UX & Backend",
+      },
+      {
+        projectDeveloperImage: "#",
+        projectDeveloperName: "Sameer",
+        projectDeveloperDesignation: "Fullstack",
+      },
+      {
+        projectDeveloperImage: "#",
+        projectDeveloperName: "Harsha",
+        projectDeveloperDesignation: "Backend",
+      },
+      {
+        projectDeveloperImage: "manohar",
+        projectDeveloperName: "Manohar",
+        projectDeveloperDesignation: "Frontend",
+      }
+    ],
+  },
 ];
