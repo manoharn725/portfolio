@@ -60,7 +60,7 @@ const Home = () => {
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
-            download="Manohar Frontend Developer"
+            download="Manohar Full-Stack Developer"
           >
             <Button title="Resume" isPrimary isDownload />
           </a>
@@ -149,35 +149,6 @@ const Home = () => {
       </section>
 
       <section className="projects__section">
-        <h2 className="projects__section--title">Mini Projects</h2>
-        <div className="project grid__cards">
-          {[...miniProjects]
-            .reverse()
-            .map(
-              (
-                {
-                  projectIcon,
-                  projectImage,
-                  peojectUrl,
-                  projectTitle,
-                  projectDescription,
-                },
-                index
-              ) => (
-                <Card
-                  key={index}
-                  icon={projectIcon}
-                  image={projectImage}
-                  url={peojectUrl}
-                  title={projectTitle}
-                  description={projectDescription}
-                />
-              )
-            )}
-        </div>
-      </section>
-
-      <section className="projects__section">
         <h2 className="projects__section--title">Projects</h2>
         <div className="project grid__cards">
           {[...projects]
@@ -203,6 +174,35 @@ const Home = () => {
                   description={projectDescription}
                   developers={projectDevelopers}
                   isDevelopers
+                />
+              )
+            )}
+        </div>
+      </section>      
+
+      <section className="projects__section">
+        <h2 className="projects__section--title">Mini Projects</h2>
+        <div className="project grid__cards">
+          {[...miniProjects]
+            .reverse()
+            .map(
+              (
+                {
+                  projectIcon,
+                  projectImage,
+                  peojectUrl,
+                  projectTitle,
+                  projectDescription,
+                },
+                index
+              ) => (
+                <Card
+                  key={index}
+                  icon={projectIcon}
+                  image={projectImage}
+                  url={peojectUrl}
+                  title={projectTitle}
+                  description={projectDescription}
                 />
               )
             )}
